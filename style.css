@@ -1,7 +1,47 @@
-* {
+:root {
+  --light: #f9f5f6;
+  --blue: #769fcd;
+  --black: #393646;
+}
+body {
   font-family: "Open Sans", sans-serif;
+  background-color: var(--light);
 }
 
+/* homepage */
 .nav-link {
-  color: black;
+  color: var(--black);
+  font-size: 1.75rem;
 }
+.nav-home {
+  color: var(--black);
+  font-size: 1.75rem;
+}
+.homepage-container {
+  max-width: 80%;
+}
+.content-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20% 0 0 3rem;
+}
+.content-div h1 {
+  font-weight: 300;
+  font-size: 4vw;
+}
+.h1-span {
+  font-weight: 400;
+  color: var(--blue);
+}
+.icon-div {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+.icons {
+  margin-right: 0.75rem;
+  font-size: 2.5vw;
+  color: var(--blue);
+}
+/* homepage */
