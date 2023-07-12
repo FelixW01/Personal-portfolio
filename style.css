@@ -21,6 +21,9 @@ body {
   color: var(--blue);
   font-size: 1.75rem;
 }
+.nav-link--scrolled {
+  color: var(--dark);
+}
 .homepage-container {
   display: flex;
   flex-direction: column;
@@ -107,26 +110,30 @@ body {
   height: 8.5rem;
   width: 8.2rem;
   border-radius: 50%;
-  background-color: #feca01;
+  border-style: solid;
+  border-color: #9db2bf;
+  background-color: var(--light);
   top: 117px;
   right: 48px;
 }
 .skills-display {
-  margin: 3rem 0 0 12rem;
+  margin: 3rem 0 0 0;
   display: block;
+  align-items: center;
+}
+.skills-icons img {
+  width: 4rem;
+  margin: 8rem 3rem 0 0;
 }
 .skills-icons {
-  visibility: hidden;
-  font-size: 5rem;
+  display: none;
+  align-items: center;
 }
-
+.skills-title {
+  text-align: center;
+}
 .navbar-fixed-top {
   position: sticky;
   top: 0;
   height: 60px;
-}
-
-.nav-link--scrolled {
-  /* change background-color to whatever you want */
-  color: var(--dark);
 }

@@ -1,11 +1,32 @@
 const egg = $('#egg');
 const yolk = $('#yolk')
+const frontEnd = $('#front-end');
+const backEnd = $('#back-end');
+const initialContent = $('#initial-content')
 
-
+// egg on click gets rid of back-end skills
+// displays front-end skills
 egg.on('click', (event) => {
-    const frontEnd = $('#front-end');
+    const title = $('.skills-title')
     if (event) {
-        frontEnd.css('visibility', 'visible');
+        event.stopPropagation();
+        initialContent.css('display', 'none')
+        backEnd.css('display', 'none');
+        title.text("Front-End")
+        frontEnd.css('display', 'block');
+    }
+})
+
+// yolk on click gets rid of front-end skills
+// displays back-end skills
+yolk.on('click', (event) => {
+    const title = $('.skills-title')
+    if (event) {
+        event.stopPropagation();
+        initialContent.css('display', 'none')
+        frontEnd.css('display', 'none');
+        title.text("Back-end")
+        backEnd.css('display', 'block');
     }
 })
 
