@@ -19,11 +19,16 @@
       src="https://kit.fontawesome.com/1eddc9d798.js"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./style.css" />
     <title>Portfolio</title>
   </head>
   <body>
-    <nav class="navbar sticky-top navbar-expand-sm navbar-light">
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light">
       <div class="container-fluid">
         <a class="navbar-brand nav-home" href="#">Home</a>
         <button
@@ -80,7 +85,27 @@
         </div>
       </div>
     </section>
-
+    <section class="skills-container">
+      <h1>Skills</h1>
+      <div class="skills-div">
+        <div class="art-container">
+          <h1>Hover me!</h1>
+          <div class="art" id="egg">
+            <div class="yolk" id="yolk"></div>
+          </div>
+        </div>
+        <div class="skills-display">
+          <h1>Front End</h1>
+          <div class="skills-icons" id="front-end">
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-js"></i>
+            <i class="fa-brands fa-bootstrap"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="separator"></div>
     <script
       src="https://kit.fontawesome.com/1eddc9d798.js"
       crossorigin="anonymous"
@@ -90,5 +115,6 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+    <script src="./script.js"></script>
   </body>
 </html>
