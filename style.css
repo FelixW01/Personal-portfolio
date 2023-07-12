@@ -3,6 +3,9 @@
   --blue: #769fcd;
   --dark: #393646;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Open Sans", sans-serif;
   background-color: var(--light);
@@ -11,16 +14,19 @@ body {
 
 /* homepage */
 .nav-link {
-  color: var(--dark);
+  color: var(--blue);
   font-size: 1.75rem;
 }
 .nav-home {
-  color: var(--dark);
+  color: var(--blue);
   font-size: 1.75rem;
 }
 .homepage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: 80%;
-  height: 80%;
+  height: 100%;
 }
 .content-div {
   display: flex;
@@ -50,7 +56,7 @@ body {
 
 .skills-container {
   max-width: 100%;
-  height: 95%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   background-color: var(--blue);
@@ -112,4 +118,15 @@ body {
 .skills-icons {
   visibility: hidden;
   font-size: 5rem;
+}
+
+.navbar-fixed-top {
+  position: sticky;
+  top: 0;
+  height: 60px;
+}
+
+.nav-link--scrolled {
+  /* change background-color to whatever you want */
+  color: var(--dark);
 }
