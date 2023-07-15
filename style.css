@@ -83,7 +83,7 @@ body {
 .art-container {
   margin-top: 3rem;
   padding-right: 5rem;
-  display: block;
+  display: inline-block;
 }
 .art {
   height: 300px;
@@ -136,7 +136,20 @@ body {
   top: 0;
   height: 60px;
 }
-
+.initial-icons {
+  align-items: center;
+}
+.initial-icons img {
+  width: 5rem;
+  margin: 6.5rem 2.5rem 0 0;
+}
+.initial-content h2 {
+  margin: auto;
+}
+.art-title {
+  text-align: center;
+  font-size: 2rem;
+}
 /* skills page */
 
 /* seperator */
@@ -191,7 +204,7 @@ body {
 
 /* footer */
 .footer {
-  background-color: var(--blue);
+  background-color: var(--dark);
   height: 30%;
 }
 /* footer */
