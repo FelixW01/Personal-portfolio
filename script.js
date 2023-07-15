@@ -2,12 +2,12 @@ const egg = $('#egg');
 const yolk = $('#yolk')
 const frontEnd = $('#front-end');
 const backEnd = $('#back-end');
-const initialContent = $('#initial-content')
+const initialContent = $('#tools')
 const skillsPage = $('#skillspage')
 
-// egg on click gets rid of back-end skills
+// egg on mouseover gets rid of back-end skills
 // displays front-end skills
-egg.on('click', (event) => {
+egg.on('mouseover', (event) => {
     const title = $('.skills-title')
     if (event) {
         event.stopPropagation();
@@ -18,9 +18,9 @@ egg.on('click', (event) => {
     }
 })
 
-// yolk on click gets rid of front-end skills
+// yolk on mouseover gets rid of front-end skills
 // displays back-end skills
-yolk.on('click', (event) => {
+yolk.on('mouseover', (event) => {
     const title = $('.skills-title')
     if (event) {
         event.stopPropagation();
@@ -31,15 +31,15 @@ yolk.on('click', (event) => {
     }
 })
 
-// skillsPage on click gets rid or yolk/egg skills
+// skillsPage on mouseover gets rid or yolk/egg skills
 // displays initial content
-skillsPage.on('click', (event) => {
+skillsPage.on('mouseover', (event) => {
     const title = $('.skills-title')
     if (event) {
         event.stopPropagation();
         backEnd.css('display', 'none');
         frontEnd.css('display', 'none');
-        title.text("")
+        title.text("Tools")
         initialContent.css('display', 'inline-block')
     }
 })
