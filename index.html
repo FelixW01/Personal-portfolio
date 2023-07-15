@@ -30,7 +30,7 @@
   <body>
     <nav class="navbar fixed-top navbar-expand-sm navbar-light">
       <div class="container-fluid">
-        <a class="navbar-brand nav-home" href="#">Home</a>
+        <a class="navbar-brand nav-home" id="home" href="#homepage">Home</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -47,24 +47,26 @@
           id="navbarSupportedContent"
         >
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Skills</a>
+            <li class="nav-item navbar-fixed-top">
+              <a class="nav-link" id="skills" href="#skillspage">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" id="projects" href="#projectspage"
+                >Projects</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" id="about" href="#aboutpage">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" id="contact" href="#contactpage">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <section class="homepage-container">
-      <div class="content-div">
+    <section class="homepage-container" id="homepage">
+      <div class="content-div content">
         <div>
           <h1>Hi, I'm <span class="h1-span">Felix</span>.</h1>
           <h1>I'm a <span class="h1-span">full stack</span> developer.</h1>
@@ -85,27 +87,55 @@
         </div>
       </div>
     </section>
-    <section class="skills-container">
-      <h1>Skills</h1>
+    <section class="skills-container" id="skillspage">
+      <h1 class="skills-header">Skills</h1>
       <div class="skills-div">
         <div class="art-container">
-          <h1>Hover me!</h1>
           <div class="art" id="egg">
             <div class="yolk" id="yolk"></div>
           </div>
         </div>
         <div class="skills-display">
-          <h1>Front End</h1>
+          <div class="skills-title-div"><h1 class="skills-title"></h1></div>
+          <div id="initial-content">
+            <h2>Select a layer to show a stack</h2>
+          </div>
           <div class="skills-icons" id="front-end">
-            <i class="fa-brands fa-css3-alt"></i>
-            <i class="fa-brands fa-html5"></i>
-            <i class="fa-brands fa-js"></i>
-            <i class="fa-brands fa-bootstrap"></i>
+            <img src="./images/react.png" alt="react_icon" />
+            <img src="./images/css.png" alt="css_icon" />
+            <img src="./images/html.png" alt="html_icon" />
+            <img src="./images/js.png" alt="js_icon" />
+            <img src="./images/bootstrap.png" alt="bootstrap_icon" />
+          </div>
+          <div class="skills-icons" id="back-end">
+            <img src="./images/nodejs.png" alt="node_icon" />
+            <img src="./images/mysql.png" alt="mysql_icon" />
+            <img src="./images/sequelize.png" alt="sequelize_icon" />
+            <img src="./images/mongodb.png" alt="mongodb_icon" />
+            <img src="./images/express.png" alt="express_icon" />
           </div>
         </div>
       </div>
     </section>
     <div class="separator"></div>
+    <section class="projects-container" id="projectspage">
+      <div>
+        <h1>Projects</h1>
+      </div>
+    </section>
+    <div class="top-separator"></div>
+    <section class="about-container" id="aboutpage">
+      <div>
+        <h1>About</h1>
+      </div>
+    </section>
+    <div class="separator"></div>
+    <section class="contact-container" id="contactpage">
+      <div>
+        <h1>Contact</h1>
+      </div>
+    </section>
+    <footer class="footer"></footer>
     <script
       src="https://kit.fontawesome.com/1eddc9d798.js"
       crossorigin="anonymous"
