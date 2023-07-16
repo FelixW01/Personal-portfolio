@@ -4,6 +4,7 @@ const frontEnd = $('#front-end');
 const backEnd = $('#back-end');
 const initialContent = $('#tools')
 const skillsPage = $('#skillspage')
+const hiddenElements = document.querySelectorAll('.hidden');
 
 // egg on mouseover gets rid of back-end skills
 // displays front-end skills
@@ -13,7 +14,7 @@ egg.on('mouseover', (event) => {
         event.stopPropagation();
         initialContent.css('display', 'none')
         backEnd.css('display', 'none');
-        title.text("Front-End")
+        title.text("Front-end")
         frontEnd.css('display', 'inline-block');
     }
 })
@@ -74,3 +75,16 @@ const io = new IntersectionObserver(callback, options);
 // observe content div 
 const target = document.querySelector('.content');
 io.observe(target);
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show');
+        }
+    });
+});
+
+hiddenElements.forEach((el) => observer.observe(el));
