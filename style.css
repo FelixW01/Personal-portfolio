@@ -180,6 +180,9 @@ body {
   align-items: center;
   height: 100%;
 }
+.project-video {
+  width: 40%;
+}
 /* projects page */
 
 /* about page */
@@ -216,7 +219,12 @@ body {
   transform: translateX(8%);
   transition: all 1s;
 }
-
+.home-hidden {
+  opacity: 0;
+  filter: blur(1px);
+  transform: translateX(8%);
+  transition: all 1s;
+}
 .show {
   opacity: 1;
   filter: blur(0);
