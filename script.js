@@ -76,9 +76,12 @@ const io = new IntersectionObserver(callback, options);
 const target = document.querySelector('.content');
 io.observe(target);
 
+// uses IO to observe if the element is in the screen or not
+// if it is then add show to complete the animation
+// if not, remove show for reusability.
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry)
+        // console.log(entry)
         if (entry.isIntersecting) {
             entry.target.classList.add('show');
         } else {
@@ -88,3 +91,18 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 hiddenElements.forEach((el) => observer.observe(el));
+
+// homepage animation, made so the home page doesn't show
+// the animation over and over.
+const homeTarget = document.querySelector('#homepage');
+
+const homeOptions = {
+    threshold: 1.0,
+};
+
+const homePage = (entries, observer) => {
+    const entry = entries[0];
+    homeTarget.classList.add('show', !entry.isIntersecting);
+};
+const homeObserver = new IntersectionObserver(homePage, homeOptions);
+homeObserver.observe(homeTarget)
