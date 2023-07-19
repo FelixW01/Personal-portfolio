@@ -269,7 +269,7 @@
             name="contact-form"
             data-netlify="true"
             onSubmit="submit"
-            method="POST"
+            method="GET"
           >
             <div class="row">
               <div class="col-md-6">
@@ -283,6 +283,7 @@
                   <label for="name">Your name</label>
                 </div>
               </div>
+
               <div class="col-md-6">
                 <div class="md-form mb-0">
                   <input
@@ -295,6 +296,7 @@
                 </div>
               </div>
             </div>
+
             <div class="row">
               <div class="col-md-12">
                 <div class="md-form mb-0">
@@ -308,6 +310,7 @@
                 </div>
               </div>
             </div>
+
             <div class="row message-div">
               <div class="col-md-12">
                 <div class="md-form">
@@ -322,6 +325,9 @@
                 </div>
               </div>
             </div>
+            <button type="submit" class="btn btn-primary send-btn">
+              Send Message
+            </button>
           </form>
 
           <div class="status"></div>
@@ -344,11 +350,7 @@
                 <p>felixwillem01@yahoo.com</p>
               </a>
             </li>
-            <li>
-              <div class="text-center text-md-left">
-                <a class="btn btn-primary send-btn">Send Message</a>
-              </div>
-            </li>
+            <li></li>
           </ul>
         </div>
         <!--Grid column-->
