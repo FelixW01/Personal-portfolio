@@ -245,8 +245,30 @@
     </section>
     <div class="top-separator"></div>
     <section class="about-container" id="aboutpage">
-      <div>
-        <h1>About</h1>
+      <h1>About</h1>
+      <div class="about-div">
+        <div class="about-img">
+          <img
+            src="./images/profile-pic3.png"
+            class="profile-pic"
+            alt="profile_picture_icon"
+          />
+        </div>
+        <div class="about-content">
+          <h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            earum aut nemo laudantium.
+          </h2>
+          <h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            molestiae iste quae sequi. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit.
+          </h2>
+          <h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. consectetur
+            adipisicing elit. Debitis, saepe?
+          </h2>
+        </div>
       </div>
     </section>
     <div class="separator"></div>
@@ -270,7 +292,10 @@
             data-netlify="true"
             onSubmit="submit"
             method="POST"
+            data-netlify-honeypot="bot-field"
+            action="/success/"
           >
+            <input class="d-none" name="bot-field" />
             <div class="row">
               <div class="col-md-6">
                 <div class="md-form mb-0">
@@ -350,10 +375,8 @@
                 <p>felixwillem01@yahoo.com</p>
               </a>
             </li>
-            <li></li>
           </ul>
         </div>
-        <!--Grid column-->
       </div>
     </section>
     <footer class="footer"></footer>
