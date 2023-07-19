@@ -128,16 +128,119 @@
     </section>
     <div class="separator"></div>
     <section class="projects-container" id="projectspage">
-      <h1>Projects</h1>
+      <h1 class="projects-title">Projects</h1>
       <div>
-        <div class="project-main">
-          <video
-            controls
-            src="./images/citysnap.mp4"
-            class="project-video"
-          ></video>
+        <div class="projects-main">
+          <div class="projects-desc">
+            <h2>City Snap</h2>
+            <img
+              src="./images/nodejs.png"
+              class="projects-icons"
+              alt="node_icon"
+            />
+            <img src="./images/js.png" class="projects-icons" alt="js_icon" />
+            <img
+              src="./images/mapbox.png"
+              class="projects-icons"
+              alt="mapbox_icon"
+            />
+            <img
+              src="./images/google-maps.png"
+              class="projects-icons"
+              alt="google-maps_icon"
+            />
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptates, at. Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Eos, blanditiis?
+            </p>
+            <div class="d-grid gap-2 d-md-block">
+              <button class="btn btn-primary" type="button">See Live</button>
+              <button class="btn btn-primary" type="button">Source Code</button>
+            </div>
+          </div>
+          <div class="projects-vid">
+            <video
+              controls
+              src="./images/citysnap.mp4"
+              class="project-video"
+            ></video>
+          </div>
         </div>
-        <div></div>
+        <div class="projects-main">
+          <div class="projects-vid">
+            <video
+              controls
+              src="./images/citysnap.mp4"
+              class="project-video"
+            ></video>
+          </div>
+          <div class="projects-desc2">
+            <h2>City Snap</h2>
+            <img
+              src="./images/nodejs.png"
+              class="projects-icons"
+              alt="node_icon"
+            />
+            <img src="./images/js.png" class="projects-icons" alt="js_icon" />
+            <img
+              src="./images/mapbox.png"
+              class="projects-icons"
+              alt="mapbox_icon"
+            />
+            <img
+              src="./images/google-maps.png"
+              class="projects-icons"
+              alt="google-maps_icon"
+            />
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptates, at. Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Eos, blanditiis?
+            </p>
+            <div class="d-grid gap-2 d-md-block">
+              <button class="btn btn-primary" type="button">See Live</button>
+              <button class="btn btn-primary" type="button">Source Code</button>
+            </div>
+          </div>
+        </div>
+        <div class="projects-main">
+          <div class="projects-desc">
+            <h2>City Snap</h2>
+            <img
+              src="./images/nodejs.png"
+              class="projects-icons"
+              alt="node_icon"
+            />
+            <img src="./images/js.png" class="projects-icons" alt="js_icon" />
+            <img
+              src="./images/mapbox.png"
+              class="projects-icons"
+              alt="mapbox_icon"
+            />
+            <img
+              src="./images/google-maps.png"
+              class="projects-icons"
+              alt="google-maps_icon"
+            />
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptates, at. Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Eos, blanditiis?
+            </p>
+            <div class="d-grid gap-2 d-md-block">
+              <button class="btn btn-primary" type="button">See Live</button>
+              <button class="btn btn-primary" type="button">Source Code</button>
+            </div>
+          </div>
+          <div class="projects-vid">
+            <video
+              controls
+              src="./images/citysnap.mp4"
+              class="project-video"
+            ></video>
+          </div>
+        </div>
       </div>
     </section>
     <div class="top-separator"></div>
@@ -147,9 +250,107 @@
       </div>
     </section>
     <div class="separator"></div>
-    <section class="contact-container" id="contactpage">
-      <div>
-        <h1>Contact</h1>
+    <section class="mb-4 contact-container" id="contactpage">
+      <!--Section heading-->
+      <h2
+        class="h1-responsive font-weight-bold text-center my-4 contact-header"
+      >
+        GET IN TOUCH
+      </h2>
+      <!--Section description-->
+      <p class="text-end w-responsive mx-auto mb-5">
+        Interested in working together? Let's connect via email or linkedIn
+      </p>
+
+      <div class="row">
+        <div class="col-md-9 mb-md-0 mb-5">
+          <form
+            id="contact-form"
+            name="contact-form"
+            action="mail.php"
+            method="POST"
+          >
+            <div class="row">
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <input
+                    type="text"
+                    id="name-input"
+                    name="name"
+                    class="form-input"
+                  />
+                  <label for="name">Your name</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <input
+                    type="text"
+                    id="email-input"
+                    name="email"
+                    class="form-input"
+                  />
+                  <label for="email">Your email</label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="md-form mb-0">
+                  <input
+                    type="text"
+                    id="subject-input"
+                    name="subject"
+                    class="form-input"
+                  />
+                  <label for="subject">Subject</label>
+                </div>
+              </div>
+            </div>
+            <div class="row message-div">
+              <div class="col-md-12">
+                <div class="md-form">
+                  <textarea
+                    type="text"
+                    id="message-input"
+                    name="message"
+                    rows="2"
+                    class="md-textarea"
+                  ></textarea>
+                  <label for="message">Your message</label>
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <div class="status"></div>
+        </div>
+        <div class="col-md-3 text-center contact-icons">
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/felix-willem01/"
+                target="_blank"
+                class="icon-label"
+                ><i class="fa-brands fa-linkedin icons"></i>
+                <p class="icon-label">LinkedIn</p>
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:felixwillem01@yahoo.com" class="icon-label">
+                <i class="fas fa-envelope mt-4 fa-2x icons"></i>
+                <p>felixwillem01@yahoo.com</p>
+              </a>
+            </li>
+            <li>
+              <div class="text-center text-md-left">
+                <a class="btn btn-primary send-btn">Send Message</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
       </div>
     </section>
     <footer class="footer"></footer>
