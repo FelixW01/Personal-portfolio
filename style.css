@@ -189,11 +189,10 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   padding-bottom: 5rem;
 }
 .projects-desc {
-  font-size: 1.25rem;
-  max-width: 40ch;
   margin: 1rem 3rem 2.25rem 0;
 }
 .projects-desc h2 {
@@ -212,6 +211,10 @@ body {
 }
 .project-video {
   max-height: 30vh;
+}
+.projects-summary {
+  font-size: 1.25rem;
+  max-width: 40ch;
 }
 /* projects page */
 
