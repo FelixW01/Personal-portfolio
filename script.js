@@ -5,6 +5,7 @@ const backEnd = $('#back-end');
 const initialContent = $('#tools')
 const skillsPage = $('#skillspage')
 const hiddenElements = document.querySelectorAll('.hidden');
+const hiddenElements2 = document.querySelectorAll('.hidden2')
 
 // egg on mouseover gets rid of back-end skills
 // displays front-end skills
@@ -69,11 +70,10 @@ const options = {
     // only detect if target element is fully visible or not
     threshold: [1]
 };
-
 const io = new IntersectionObserver(callback, options);
 
 // observe content div 
-const target = document.querySelector('.content');
+const target = document.querySelector('.home-content');
 io.observe(target);
 
 // uses IO to observe if the element is in the screen or not
@@ -92,17 +92,17 @@ const observer = new IntersectionObserver((entries) => {
 
 hiddenElements.forEach((el) => observer.observe(el));
 
-// homepage animation, made so the home page doesn't show
-// the animation over and over.
-const homeTarget = document.querySelector('#homepage');
 
-const homeOptions = {
-    threshold: 1.0,
-};
+// One time animation for when the animation is not repeated
+const oneTimeAnimationIo = new IntersectionObserver(callback, options);
 
-const homePage = (entries, observer) => {
-    const entry = entries[0];
-    homeTarget.classList.add('show', !entry.isIntersecting);
-};
-const homeObserver = new IntersectionObserver(homePage, homeOptions);
-homeObserver.observe(homeTarget)
+const oneTimeAnimationObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        // console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+    });
+});
+
+hiddenElements2.forEach((el) => oneTimeAnimationObserver.observe(el));
