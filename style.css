@@ -5,10 +5,8 @@
 }
 html,
 body {
-  position: relative;
+  display: relative;
   overflow-x: hidden;
-}
-html {
   scroll-behavior: smooth;
 }
 body {
@@ -74,6 +72,14 @@ body {
   }
   .nav-link {
     font-size: 1.75rem;
+  }
+}
+@media only screen and (max-width: 933px) {
+  .content-div h1 {
+    font-size: 2.25rem;
+  }
+  .nav-link {
+    font-size: 1.5rem;
   }
 }
 /* homepage */
@@ -179,6 +185,28 @@ body {
     max-width: 4rem;
     margin: 4rem 1.5rem 0 0;
   }
+  .skills-div {
+    margin-top: 8.5rem;
+  }
+  .skills-header {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 933px) {
+  .skills-icons img {
+    max-width: 4rem;
+    margin: 3rem 1.5rem 0 0;
+  }
+  .initial-icons img {
+    max-width: 4rem;
+    margin: 3rem 1.5rem 0 0;
+  }
+  .skills-div {
+    margin-top: 10rem;
+  }
+  .skills-header {
+    font-size: 2.5rem;
+  }
 }
 /* skills page */
 
@@ -208,7 +236,12 @@ body {
 }
 @media only screen and (max-width: 1200px) {
   .top-separator {
-    padding-top: 8px;
+    padding-top: 10px;
+  }
+}
+@media only screen and (max-width: 933px) {
+  .top-separator {
+    padding-top: 12px;
   }
 }
 /* seperator */
@@ -250,11 +283,11 @@ body {
 .projects-icons {
   max-width: 3vh;
 }
-.project-video {
+.projects-video {
   max-height: 30vh;
   border-radius: 0.5rem;
 }
-.project-video:hover {
+.projects-video:hover {
   transform: rotate(0.25deg);
 }
 .projects-summary {
@@ -276,8 +309,23 @@ body {
   color: var(--blue);
 }
 @media only screen and (max-width: 1200px) {
+  .projects-desc h2 {
+    font-size: 1.5rem;
+  }
+  .projects-desc2 h2 {
+    font-size: 1.5rem;
+  }
+  .projects-title {
+    font-size: 2.5rem;
+  }
   .projects-container {
-    min-height: 150vh;
+    min-height: 147vh;
+  }
+  .projects-video {
+    height: 24vh;
+  }
+  .projects-summary {
+    font-size: 1rem;
   }
 }
 
@@ -312,6 +360,19 @@ body {
   max-width: 100%;
   border-radius: 50%;
   margin: 0 2rem 10rem 0;
+}
+@media only screen and (max-width: 1000px) {
+  .about-content h2 {
+    font-size: 1rem;
+    width: 45ch;
+  }
+  .about-img {
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+  .profile-pic {
+    margin-bottom: 0;
+  }
 }
 /* about page */
 
