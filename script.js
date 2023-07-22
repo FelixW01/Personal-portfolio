@@ -66,22 +66,22 @@ const callback = (entries, observer) => {
 
 // options controls circumstances under which the observer's callback is invoked
 const options = {
-    // no root provided - by default browser viewport used to check target visibility
     // only detect if target element is fully visible or not
     threshold: [1]
 };
 const io = new IntersectionObserver(callback, options);
 
-// observe content div 
+// // observe content div 
 const target = document.querySelector('.home-content');
 io.observe(target);
 
-// uses IO to observe if the element is in the screen or not
-// if it is then add show to complete the animation
-// if not, remove show for reusability.
+//-----------------
+
+// uses IO to observe if the element is in frame
+// add the class 'show', then remove so the other sets of stack
+// will have animation
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        // console.log(entry)
         if (entry.isIntersecting) {
             entry.target.classList.add('show');
         } else {
@@ -92,13 +92,13 @@ const observer = new IntersectionObserver((entries) => {
 
 hiddenElements.forEach((el) => observer.observe(el));
 
+//----------------
 
 // One time animation for when the animation is not repeated
 const oneTimeAnimationIo = new IntersectionObserver(callback, options);
 
 const oneTimeAnimationObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        // console.log(entry)
         if (entry.isIntersecting) {
             entry.target.classList.add('show');
         }
