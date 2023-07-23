@@ -16,7 +16,7 @@ egg.on('mouseover', (event) => {
         initialContent.css('display', 'none')
         backEnd.css('display', 'none');
         title.text("Front-end")
-        frontEnd.css('display', 'inline-block');
+        frontEnd.css('display', 'flex');
     }
 })
 
@@ -29,7 +29,7 @@ yolk.on('mouseover', (event) => {
         initialContent.css('display', 'none')
         frontEnd.css('display', 'none');
         title.text("Back-end")
-        backEnd.css('display', 'inline-block');
+        backEnd.css('display', 'flex');
     }
 })
 
@@ -42,7 +42,7 @@ skillsPage.on('mouseover', (event) => {
         backEnd.css('display', 'none');
         frontEnd.css('display', 'none');
         title.text("Tools")
-        initialContent.css('display', 'inline-block')
+        initialContent.css('display', 'flex')
     }
 })
 
