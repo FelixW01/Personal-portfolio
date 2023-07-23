@@ -580,7 +580,27 @@ body {
 /* footer */
 .footer {
   background-color: var(--dark);
-  min-height: 25%;
+  min-height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.footer-div i {
+  font-size: 4rem;
+  color: var(--light);
+  margin-right: 1.5rem;
+  margin-top: 5rem;
+}
+.to-top {
+  margin-top: 2rem;
+  text-decoration: none;
+  color: var(--light);
+  min-height: 1rem;
 }
 /* footer */
 
