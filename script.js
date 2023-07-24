@@ -106,12 +106,3 @@ const oneTimeAnimationObserver = new IntersectionObserver((entries) => {
 });
 
 hiddenElements2.forEach((el) => oneTimeAnimationObserver.observe(el));
-
-// Vid controls on hover effect
-$('.projects-video').hover(function toggleControls() {
-    if (this.hasAttribute("controls")) {
-        this.removeAttribute("controls")
-    } else {
-        this.setAttribute("controls", "controls")
-    }
-})

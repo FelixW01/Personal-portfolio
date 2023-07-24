@@ -85,7 +85,7 @@ body {
     font-size: 1.5rem;
   }
 }
-@media only screen and (max-width: 768) {
+@media only screen and (max-width: 768px) {
   .homepage-container {
     min-height: 100%;
   }
@@ -98,6 +98,14 @@ body {
     font-size: 2.25rem;
   }
   .nav-link {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 768px) and (min-height: 1024px) {
+  .homepage-container {
+    min-height: 100%;
+  }
+  .nav-home {
     font-size: 1.5rem;
   }
 }
@@ -224,62 +232,78 @@ body {
   font-size: 1.25rem;
 }
 /* initial icons */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1275px) {
   .skills-icons img {
     max-width: 4rem;
-    margin: 4rem 1.5rem 0 0;
+    margin: 3rem 0.75rem 0.75rem 0.75rem;
   }
   .initial-icons img {
     max-width: 4rem;
-    margin: 4rem 1.5rem 0 0;
+    margin: 3rem 0.75rem 0.75rem 0.75rem;
   }
-  .skills-div {
-    margin-top: 8.5rem;
+  .initial-icons {
+    margin-top: 2.5rem;
+  }
+  .skills-icons {
+    margin-top: 2.5rem;
   }
   .skills-header {
     font-size: 2.5rem;
+  }
+  .skills-display {
+    max-width: 55vw;
   }
 }
-@media only screen and (max-width: 933px) {
+@media only screen and (max-width: 995px) {
   .skills-icons img {
-    max-width: 4rem;
-    margin: 3rem 1.5rem 0 0;
+    max-width: 2.75rem;
+    margin: 2rem 0.5rem 0.5rem 0.5rem;
   }
   .initial-icons img {
-    max-width: 4rem;
-    margin: 3rem 1.5rem 0 0;
-  }
-  .skills-div {
-    margin-top: 10rem;
-  }
-  .skills-header {
-    font-size: 2.5rem;
+    max-width: 2.75rem;
+    margin: 2rem 0.5rem 0.5rem 0.5rem;
   }
 }
 @media only screen and (max-width: 826px) {
   .skills-icons img {
-    max-width: 3.5rem;
-    margin: 3rem 1.25rem 0 0;
+    max-width: 2rem;
+    margin: 2rem 0.25rem 0.25rem 0.25rem;
   }
   .initial-icons img {
-    max-width: 3.5rem;
-    margin: 3rem 1.25rem 0 0;
+    max-width: 2rem;
+    margin: 2rem 0.25rem 0.25rem 0.25rem;
   }
 }
 @media only screen and (max-width: 768px) {
+  .art-container {
+    margin-top: 1.25rem;
+    padding-right: 3rem;
+  }
+  .skills-display {
+    margin-top: 1.25rem;
+    padding-left: 3rem;
+  }
   .skills-icons img {
-    max-width: 3rem;
-    margin: 3rem 1rem 0 0;
+    max-width: 2.25rem;
+    margin: 2rem 1.5rem 0 1.5rem;
   }
   .initial-icons img {
-    max-width: 3rem;
-    margin: 3rem 1rem 0 0;
+    max-width: 2.25rem;
+    margin: 2rem 1.5rem 0 1.5rem;
+  }
+  .initial-icons div {
+    padding-right: 0;
+  }
+  .skills-container {
+    min-height: 100%;
   }
   .skills-div {
-    margin-top: 5rem;
+    margin-top: 4rem;
   }
-  .skills-header {
-    font-size: 2.5rem;
+}
+@media (max-width: 768px) and (min-height: 1024px) {
+  .skills-container {
+    min-height: 75%;
   }
 }
 @media only screen and (max-width: 682px) {
@@ -332,6 +356,14 @@ body {
 @media only screen and (max-width: 933px) {
   .top-separator {
     padding-top: 13px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .top-separator {
+    display: none;
+  }
+  .separator {
+    display: none;
   }
 }
 /* seperator */
@@ -413,6 +445,7 @@ body {
   }
   .projects-video {
     height: 24vh;
+    width: 42vw;
   }
   .projects-summary {
     font-size: 1rem;
@@ -420,36 +453,24 @@ body {
 }
 @media only screen and (max-width: 933px) {
   .projects-desc h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .projects-desc2 h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .projects-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .projects-container {
-    min-height: 140vh;
-  }
-  .projects-video {
-    height: 20vh;
+    min-height: 147vh;
   }
   .projects-summary {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 @media only screen and (max-width: 768px) {
-  .projects-desc h2 {
-    font-size: 1.5rem;
-  }
-  .projects-desc2 h2 {
-    font-size: 1.5rem;
-  }
-  .projects-title {
-    font-size: 2.5rem;
-  }
   .projects-container {
-    min-height: 130vh;
+    min-height: 120vh;
   }
   .projects-video {
     height: 18vh;
@@ -457,8 +478,25 @@ body {
   .projects-summary {
     font-size: 0.8rem;
   }
+  .btn {
+    font-size: 0.75rem;
+  }
+  .projects-main {
+    padding-bottom: 1.5rem;
+  }
+  .collaborators {
+    font-size: 0.75rem;
+    margin: 0.2rem 0;
+  }
+  .projects-icons {
+    max-width: 2vh;
+  }
 }
-
+@media (max-width: 768px) and (min-height: 1024px) {
+  .projects-container {
+    min-height: 100%;
+  }
+}
 /* projects page */
 
 /* about page */
@@ -505,12 +543,29 @@ body {
   }
 }
 @media only screen and (max-width: 768px) {
+  .about-content {
+    margin-top: 0.75rem;
+  }
   .about-content h2 {
-    font-size: 1rem;
-    width: 40ch;
+    font-size: 0.9rem;
+    width: 45ch;
   }
   .profile-pic {
-    margin-top: 2.5rem;
+    margin-top: 1rem;
+  }
+  .about-container h1 {
+    margin-top: 2rem;
+  }
+  .about-container {
+    min-height: 60%;
+  }
+}
+@media (max-width: 768px) and (min-height: 1024px) {
+  .about-container {
+    min-height: 50%;
+  }
+  .about-container h1 {
+    margin-top: 2rem;
   }
 }
 /* about page */
@@ -550,13 +605,6 @@ body {
   background: var(--light);
   border-radius: 0.5rem;
 }
-.icon-label {
-  text-decoration: none;
-  color: var(--dark);
-}
-.contact-icons {
-  padding-left: 2rem;
-}
 .send-btn {
   margin-top: 1.5rem;
   background-color: var(--blue);
@@ -564,15 +612,31 @@ body {
 .send-btn:hover {
   background-color: var(--dark);
 }
+.form-content {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-p {
+  margin-bottom: 3rem;
+}
 @media only screen and (max-width: 768px) {
-  .row {
-    max-width: 80%;
+  .main-form {
+    max-width: 75%;
   }
-  .form-input {
-    width: 100%;
+  .contact-header {
+    font-size: 2.5rem;
+    margin-top: 1rem;
   }
-  .contact-icons {
-    padding: 0;
+  .contact-p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 768px) and (min-height: 1024px) {
+  .contact-container {
+    min-height: 50%;
   }
 }
 /* contact */
@@ -585,22 +649,38 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.footer-div {
+.footer-ul {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-top: 4.5rem;
 }
-.footer-div i {
+.footer-ul li {
+  margin-right: 1.75rem;
+}
+.footer-ul i {
   font-size: 4rem;
   color: var(--light);
-  margin-right: 1.5rem;
-  margin-top: 5rem;
+}
+.footer-ul i:hover {
+  color: var(--blue);
 }
 .to-top {
   margin-top: 2rem;
   text-decoration: none;
   color: var(--light);
   min-height: 1rem;
+}
+.to-top:hover {
+  color: var(--blue);
+}
+ul {
+  list-style: none;
+}
+@media only screen and (max-width: 1000px) {
+  .footer-ul i {
+    font-size: 2rem;
+  }
 }
 /* footer */
 
