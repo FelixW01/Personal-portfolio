@@ -106,6 +106,7 @@
             <h1 class="skills-title">Tools</h1>
           </div>
           <div id="initial-content"></div>
+          <!-- Initial icons -->
           <div class="initial-icons hidden" id="tools">
             <div>
             <img src="./images/git.png" alt="git_icon" />
@@ -133,6 +134,7 @@
             </div>
 
           </div>
+          <!-- front-end -->
           <div class="skills-icons hidden" id="front-end">
             <div>
             <img src="./images/react.png" alt="react_icon" />
@@ -160,6 +162,7 @@
             </div>
 
           </div>
+          <!-- back-end -->
           <div class="skills-icons hidden" id="back-end">
             <div>
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg" />
@@ -199,6 +202,7 @@
         <div class="projects-main hidden2">
           <div class="projects-desc">
             <h2>The Movie Forum</h2>
+            <div class="projects-icons-div">
             <img
               src="./images/nodejs.png"
               class="projects-icons"
@@ -215,7 +219,8 @@
               class="projects-icons"
               alt="google-maps_icon"
             />
-            <p><strong>Collaborators: </strong> Ashley B, Nick P, Herb S</p>
+            </div>
+            <p class="collaborators"><strong>Collaborators: </strong> Ashley B, Nick P, Herb S</p>
             <p class="projects-summary">
               An interactive, real-time forum app where users can congregate, interact and coverse about
               upcoming movies provided by the TMDB api.
@@ -238,19 +243,13 @@
             </div>
           </div>
           <div class="projects-vid">
-            <video
-              src="./images/movie-forum.mp4"
-              class="projects-video"
-            ></video>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1zzl37IlHMU" class="projects-video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
         </div>
         <!-- project 2 -->
         <div class="projects-main hidden2">
           <div class="projects-vid">
-            <video
-              src="./images/citysnap.mp4"
-              class="projects-video"
-            ></video>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/a_W2GmhaA_k" class="projects-video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
           <div class="projects-desc2">
             <h2>City Snap</h2>
@@ -271,7 +270,7 @@
               alt="google-maps_icon"
             />
             <p class="projects-summary">
-              Exploration at your fingertips. An interactive App that spins the globe onto the specific geolocation of a city that the user has specified. In addition, the user will be able to view a well-known image from the 
+              Exploration at your fingertips. An interactive App that spins the globe onto the specific geolocation of a city that the user has specified. In addition, the user will be able to view a well-known image from the locale.
             </p>
             <div class="d-grid gap-2 d-md-block">
               <a href="https://ilirhajdari.github.io/city-snap/" target="_blank"><button class="btn btn-outline-primary live-btn" type="button">
@@ -314,10 +313,7 @@
             </div>
           </div>
           <div class="projects-vid">
-            <video
-              src="./images/citysnap.mp4"
-              class="projects-video"
-            ></video>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/a_W2GmhaA_k" class="projects-video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -364,21 +360,23 @@
       >
         GET IN TOUCH
       </h2>
-      <p class="text-end w-responsive mx-auto mb-5">
+      <p class="text-end w-responsive mx-auto contact-p">
         Interested in working together? Let's connect via email or linkedIn
       </p>
 
       <div class="row">
-        <div class="col-md-9 mb-md-0 mb-5">
+        <div class="col-md-9 mb-md-0 mb-5 form-content">
           <form
             id="contact-form"
             name="contact-form"
+            class="main-form"
             data-netlify="true"
             onSubmit="submit"
             method="POST"
             data-netlify-honeypot="bot-field"
             action="/success/"
           >
+          <!-- Name -->
             <input class="d-none" name="bot-field" />
             <div class="row">
               <div class="col-md-6">
@@ -392,7 +390,7 @@
                   <label for="name">Your name</label>
                 </div>
               </div>
-
+          <!-- Email -->
               <div class="col-md-6">
                 <div class="md-form mb-0">
                   <input
@@ -405,7 +403,7 @@
                 </div>
               </div>
             </div>
-
+          <!-- Subject -->
             <div class="row">
               <div class="col-md-12">
                 <div class="md-form mb-0">
@@ -419,7 +417,7 @@
                 </div>
               </div>
             </div>
-
+          <!-- Content -->
             <div class="row message-div">
               <div class="col-md-12">
                 <div class="md-form">
@@ -428,7 +426,7 @@
                     id="message-input"
                     name="message"
                     rows="2"
-                    class="md-textarea"
+                    class="md-textarea form-input"
                   ></textarea>
                   <label for="message">Your message</label>
                 </div>
@@ -438,41 +436,31 @@
               Send Message
             </button>
           </form>
-
-          <div class="status"></div>
-        </div>
-        <div class="col-md-3 text-center contact-icons">
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a
-                href="https://www.linkedin.com/in/felix-willem01/"
-                target="_blank"
-                class="icon-label"
-                ><i class="fa-brands fa-linkedin icons"></i>
-                <p class="icon-label">LinkedIn</p>
-              </a>
-            </li>
-
-            <li>
-              <a href="mailto:felixwillem01@yahoo.com" class="icon-label">
-                <i class="fas fa-envelope mt-4 fa-2x icons"></i>
-                <p>felixwillem01@yahoo.com</p>
-              </a>
-            </li>
-          </ul>
         </div>
       </div>
     </section>
-
 <!-- footer -->
     <footer class="footer">
       <a href="#homepage" class="to-top"><i class="fa-solid fa-chevron-up"></i></a>
-      <div class="footer-div">
-            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href=""><i class="fa-brands fa-github"></i></a>
-            <a href=""><i class="fa-brands fa-youtube"></i></a>
-            <a href=""><i class="fa-solid fa-file"></i></a>
-      </div>
+        <ul class="footer-ul">
+        <li>
+          <a href="https://www.linkedin.com/in/felix-willem01/"
+              target="_blank"
+              class="icons"><i class="fa-brands fa-linkedin-in"></i></a>
+        </li>
+        <li>
+          <a href="mailto:felixwillem01@yahoo.com"><i class="fa-solid fa-envelope"></i></a>
+        </li>
+        <li>
+          <a href="https://github.com/FelixW01" target="_blank" class="icons"><i class="fa-brands fa-github"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-solid fa-file"></i></a>
+        </li>
+      </ul>
     </footer>
     <script
       src="https://kit.fontawesome.com/1eddc9d798.js"
