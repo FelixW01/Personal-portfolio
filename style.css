@@ -18,14 +18,24 @@ body {
 /* homepage */
 .nav-link {
   color: var(--blue);
-  font-size: 2rem;
+  font-size: 1.75rem;
+  padding-right: 1rem;
+}
+.nav-link:hover {
+  color: var(--dark);
 }
 .nav-home {
   color: var(--blue);
-  font-size: 2rem;
+  font-size: 1.75rem;
+}
+.nav-item {
+  padding-right: 1rem;
 }
 .nav-link--scrolled {
   color: var(--dark);
+}
+.nav-link--scrolled:hover {
+  color: #001c30;
 }
 .homepage-container {
   display: flex;
@@ -70,8 +80,16 @@ body {
   .content-div h1 {
     font-size: 2.8rem;
   }
+  .nav-home {
+    font-size: 1.5rem;
+  }
   .nav-link {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .nav-link {
+    padding: 0.3rem;
   }
 }
 @media only screen and (max-width: 933px) {
@@ -81,13 +99,28 @@ body {
   .content-div h1 {
     font-size: 2.25rem;
   }
+  .nav-home {
+    font-size: 1.25rem;
+  }
   .nav-link {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 @media only screen and (max-width: 768px) {
   .homepage-container {
     min-height: 100%;
+  }
+}
+
+@media (max-width: 768px) and (min-height: 1024px) {
+  .homepage-container {
+    min-height: 100%;
+  }
+  .nav-home {
+    font-size: 1.25rem;
+  }
+  .nav-link {
+    font-size: 1.25rem;
   }
 }
 @media only screen and (max-width: 682px) {
@@ -96,17 +129,6 @@ body {
   }
   .content-div h1 {
     font-size: 2.25rem;
-  }
-  .nav-link {
-    font-size: 1.5rem;
-  }
-}
-@media (max-width: 768px) and (min-height: 1024px) {
-  .homepage-container {
-    min-height: 100%;
-  }
-  .nav-home {
-    font-size: 1.5rem;
   }
 }
 /* homepage */
@@ -124,7 +146,7 @@ body {
   font-weight: 400;
   display: inline;
   margin-top: 5rem;
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 .skills-div {
   max-width: 80%;
@@ -205,7 +227,7 @@ body {
   top: 0;
   height: 60px;
 }
-/* initial icons */
+/* skills initial icons */
 .initial-icons {
   display: flex;
   flex-direction: row;
@@ -231,7 +253,7 @@ body {
   display: inline;
   font-size: 1.25rem;
 }
-/* initial icons */
+/* skills initial icons */
 @media only screen and (max-width: 1275px) {
   .skills-icons img {
     max-width: 4rem;
@@ -318,9 +340,6 @@ body {
   .skills-div {
     margin-top: 3rem;
   }
-  .skills-header {
-    font-size: 2.5rem;
-  }
 }
 /* skills page */
 
@@ -379,7 +398,7 @@ body {
   font-weight: 400;
   display: inline;
   margin: 4rem 0;
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 .projects-main {
   display: flex;
@@ -430,6 +449,11 @@ body {
   background-color: var(--light);
   color: var(--blue);
 }
+@media only screen and (max-width: 1275px) {
+  .projects-title {
+    font-size: 2.5rem;
+  }
+}
 @media only screen and (max-width: 1200px) {
   .projects-desc h2 {
     font-size: 1.5rem;
@@ -457,9 +481,6 @@ body {
   }
   .projects-desc2 h2 {
     font-size: 1rem;
-  }
-  .projects-title {
-    font-size: 2rem;
   }
   .projects-container {
     min-height: 147vh;
@@ -529,6 +550,14 @@ body {
   border-radius: 50%;
   margin: 0 2rem 10rem 0;
 }
+.about-h1 {
+  font-size: 3rem;
+}
+@media only screen and (max-width: 1275px) {
+  .about-h1 {
+    font-size: 2.5rem;
+  }
+}
 @media only screen and (max-width: 1000px) {
   .about-content h2 {
     font-size: 1rem;
@@ -578,7 +607,7 @@ body {
   min-height: 65%;
 }
 .contact-header {
-  font-size: 1.9rem;
+  font-size: 3rem;
   color: var(--black);
   font-weight: 400;
 }
@@ -598,7 +627,7 @@ body {
 }
 #message-input {
   min-width: 100%;
-  padding: 0.3rem 0;
+  padding: 0.25rem 0.3rem;
   font-size: 1rem;
   margin: 0.63rem 0;
   border: 2px solid var(--dark);
@@ -621,12 +650,16 @@ body {
 .contact-p {
   margin-bottom: 3rem;
 }
+@media only screen and (max-width: 1275px) {
+  .contact-header {
+    font-size: 2.5rem;
+  }
+}
 @media only screen and (max-width: 768px) {
   .main-form {
     max-width: 75%;
   }
   .contact-header {
-    font-size: 2.5rem;
     margin-top: 1rem;
   }
   .contact-p {
@@ -676,6 +709,11 @@ body {
 }
 ul {
   list-style: none;
+}
+. @media only screen and (max-width: 1270px) {
+  .footer-ul i {
+    font-size: 3rem;
+  }
 }
 @media only screen and (max-width: 1000px) {
   .footer-ul i {
