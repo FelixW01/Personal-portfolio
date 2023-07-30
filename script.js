@@ -1,22 +1,22 @@
 const egg = $('#egg');
 const yolk = $('#yolk')
-const frontEnd = $('#front-end');
+const tools = $('#tools');
 const backEnd = $('#back-end');
-const initialContent = $('#tools')
+const frontEnd = $('#front-end')
 const skillsPage = $('#skillspage')
 const hiddenElements = document.querySelectorAll('.hidden');
 const hiddenElements2 = document.querySelectorAll('.hidden2')
 
-// egg on mouseover gets rid of back-end skills
-// displays front-end skills
+// egg on mouseover gets rid of back-end, front end
+// displays tools skills
 egg.on('mouseover', (event) => {
     const title = $('.skills-title')
     if (event) {
         event.stopPropagation();
-        initialContent.css('display', 'none')
+        frontEnd.css('display', 'none')
         backEnd.css('display', 'none');
-        title.text("Front-end")
-        frontEnd.css('display', 'flex');
+        title.text("Tools")
+        tools.css('display', 'flex');
     }
 })
 
@@ -26,23 +26,23 @@ yolk.on('mouseover', (event) => {
     const title = $('.skills-title')
     if (event) {
         event.stopPropagation();
-        initialContent.css('display', 'none')
-        frontEnd.css('display', 'none');
+        frontEnd.css('display', 'none')
+        tools.css('display', 'none');
         title.text("Back-end")
         backEnd.css('display', 'flex');
     }
 })
 
 // skillsPage on mouseover gets rid or yolk/egg skills
-// displays initial content
+// displays front-end skills
 skillsPage.on('mouseover', (event) => {
     const title = $('.skills-title')
     if (event) {
         event.stopPropagation();
         backEnd.css('display', 'none');
-        frontEnd.css('display', 'none');
-        title.text("Tools")
-        initialContent.css('display', 'flex')
+        tools.css('display', 'none');
+        title.text("Front-end")
+        frontEnd.css('display', 'flex')
     }
 })
 
