@@ -710,7 +710,7 @@ body {
 ul {
   list-style: none;
 }
-. @media only screen and (max-width: 1270px) {
+@media only screen and (max-width: 1270px) {
   .footer-ul i {
     font-size: 3rem;
   }
