@@ -1,3 +1,4 @@
+import './Skills.css'
 
 function Skills() {
     return (
@@ -45,7 +46,7 @@ function Skills() {
             </div>
 
           </div>
-          {/* <!-- tools icons --> */}
+          {/* <!-- tools icons -->
           <div className="skills-icons hidden" id="tools">
             <div>
             <img src="./images/git.png" alt="git_icon" />
@@ -73,8 +74,9 @@ function Skills() {
             </div>
 
           </div>
+
           {/* <!-- back-end --> */}
-          <div className="skills-icons hidden" id="back-end">
+          {/* <div className="skills-icons hidden" id="back-end">
             <div>
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg" alt="nodejs_icon"/>
             <p className="icon-title">Node JS</p>
@@ -99,7 +101,7 @@ function Skills() {
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" alt="express_icon"/>
             <p className="icon-title">Express</p>
             </div>
-          </div>
+          </div>  */}
         </div>
       </div>
     </section>

@@ -4,7 +4,7 @@ function Home() {
 
     return (
     <>
-    <container className="homepage-container hidden2" id="homepage">
+    <section className="homepage-container hidden2" id="homepage">
       <div className="content-div home-content">
         <div>
           <h1>Hi, I'm <span className="h1-span">Felix</span>.</h1>
@@ -33,7 +33,7 @@ function Home() {
           </div>
         </div>
       </div>
-    </container>
+    </section>
     </>
   );
 }

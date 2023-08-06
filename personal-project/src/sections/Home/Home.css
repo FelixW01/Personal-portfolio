@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-height: 100%;
+  min-height: 100%;
   max-width: 80%;
 }
 .content-div {
