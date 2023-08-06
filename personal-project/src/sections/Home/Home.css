@@ -20,16 +20,7 @@
   font-weight: 400;
   color: var(--blue);
 }
-.icon-div {
-  display: flex;
-  flex-direction: row;
-  align-items: start;
-}
-.icons {
-  margin-right: 0.75rem;
-  font-size: 2rem;
-  color: var(--blue);
-}
+
 @media only screen and (max-width: 1500px) {
   .content-div {
     margin-top: 28rem;

@@ -3,7 +3,8 @@ import './Contact.css'
 function Contact() {
     return (
         <>
-            <section className="mb-4 contact-container" id="contactpage">
+    <div class="separator"></div>
+    <section className="mb-4 contact-container" id="contactpage">
       <h2
         className="h1-responsive font-weight-bold text-center my-4 contact-header"
       >
