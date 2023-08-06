@@ -1,0 +1,51 @@
+.nav-link {
+  color: var(--blue);
+  font-size: 1.75rem;
+  padding-right: 1rem;
+}
+.nav-link:hover {
+  color: var(--dark);
+}
+.nav-home {
+  color: var(--blue);
+  font-size: 1.75rem;
+}
+.nav-item {
+  padding-right: 1rem;
+}
+.nav-link--scrolled {
+  color: var(--dark);
+}
+.nav-link--scrolled:hover {
+  color: #001c30;
+}
+@media only screen and (max-width: 1200px) {
+  .nav-home {
+    font-size: 1.5rem;
+  }
+  .nav-link {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .nav-link {
+    padding: 0.3rem;
+  }
+}
+@media only screen and (max-width: 933px) {
+  .nav-home {
+    font-size: 1.25rem;
+  }
+  .nav-link {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) and (min-height: 1024px) {
+  .nav-home {
+    font-size: 1.25rem;
+  }
+  .nav-link {
+    font-size: 1.25rem;
+  }
+}

@@ -1,10 +1,10 @@
-import Navbar from './Navbar'
-import Home from './Home'
-import Skills from './Skills'
-import Projects from './Projects'
-import About from './About'
-import Contact from './Contact'
-import Footer from './Footer'
+import Navbar from './Navbar/Navbar'
+import Home from './Home/Home'
+import Skills from './Skills/Skills'
+import Projects from './Projects/Projects'
+import About from './About/About'
+import Contact from './Contact/Contact'
+import Footer from './Footer/Footer'
 import './PortfolioContainer.css'
 
 

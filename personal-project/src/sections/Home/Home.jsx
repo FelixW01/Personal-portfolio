@@ -1,9 +1,10 @@
+import './Home.css'
 
 function Home() {
 
     return (
-        <>
-    <div className="homepage-container hidden2" id="homepage">
+    <>
+    <container className="homepage-container hidden2" id="homepage">
       <div className="content-div home-content">
         <div>
           <h1>Hi, I'm <span className="h1-span">Felix</span>.</h1>
@@ -32,7 +33,7 @@ function Home() {
           </div>
         </div>
       </div>
-    </div>
+    </container>
     </>
   );
 }
