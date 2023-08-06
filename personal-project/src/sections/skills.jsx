@@ -20,27 +20,27 @@ function Skills() {
           {/* <!-- front-end | initial icons --> */}
           <div className="initial-icons hidden" id="front-end">
             <div>
-            <img src="./images/react.png" alt="react_icon" />
+            <img src="../../dist/assets/images/react.png" alt="react_icon" />
             <p className="icon-title">React</p>
             </div>
 
             <div>
-            <img src="./images/css.png" alt="css_icon" />
+            <img src="../../dist/assets/images/css.png" alt="css_icon" />
             <p className="icon-title">CSS 3</p>
             </div>
 
             <div>
-            <img src="./images/html.png" alt="html_icon" />
+            <img src="../../dist/assets/images/html.png" alt="html_icon" />
             <p className="icon-title">HTML 5</p>
             </div>
 
             <div>
-            <img src="./images/js.png" alt="js_icon" />
+            <img src="../../dist/assets/images/js.png" alt="js_icon" />
             <p className="icon-title">Javascript</p>
             </div>
 
             <div>
-            <img src="./images/bootstrap.png" alt="bootstrap_icon" />
+            <img src="../../dist/assets/images/bootstrap.png" alt="bootstrap_icon" />
             <p className="icon-title">Bootstrap</p>
             </div>
 

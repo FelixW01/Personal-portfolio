@@ -2,17 +2,17 @@
 function About() {
     return (
         <>
-    <section class="about-container" id="aboutpage">
-      <h1 class="about-h1">About</h1>
-      <div class="about-div">
-        <div class="about-img">
+    <section className="about-container" id="aboutpage">
+      <h1 className="about-h1">About</h1>
+      <div className="about-div">
+        <div className="about-img">
           <img
-            src="./images/profile-pic3.png"
-            class="profile-pic"
+            src="../../dist/assets/images/profile-pic3.png"
+            className="profile-pic"
             alt="profile_picture_icon"
           />
         </div>
-        <div class="about-content hidden2">
+        <div className="about-content hidden2">
           <h2>
             I'm Felix, a passionate and innovative Full Stack Web Developer with
             a strong foundation in both front-end and back-end technologies.
