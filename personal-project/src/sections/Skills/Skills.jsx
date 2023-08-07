@@ -1,6 +1,29 @@
 import './Skills.css'
+import { useRef, useEffect, useState} from 'react';
 
-function Skills(props) {
+function Skills() {
+  const skillRefs = useRef([]);
+  skillRefs.current = [];
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show');
+        }
+    });
+    })
+    skillRefs.current.forEach((ref) => observer.observe(ref))
+  }, [])
+
+  const addToSkillRefs = (ref) => {
+    if(ref && !skillRefs.current.includes(ref)) {
+      skillRefs.current.push(ref);
+    }
+    console.log(skillRefs.current)
+  }
     return (
         <>
         <section className="skills-container" id="skillspage">
@@ -19,7 +42,7 @@ function Skills(props) {
           </div>
           <div id="initial-content"></div>
           {/* <!-- front-end | initial icons --> */}
-          <div className="initial-icons hidden" id="front-end" ref={props.addToRefs}>
+          <div className="initial-icons hidden" id="front-end" ref={addToSkillRefs}>
             <div>
             <img src="../../dist/assets/images/react.png" alt="react_icon" />
             <p className="icon-title">React</p>
@@ -44,10 +67,10 @@ function Skills(props) {
             <img src="../../dist/assets/images/bootstrap.png" alt="bootstrap_icon" />
             <p className="icon-title">Bootstrap</p>
             </div>
-
           </div>
-          {/* <!-- tools icons -->
-          <div className="skills-icons hidden" id="tools">
+
+          {/* <!-- tools icons --> */}
+          <div className="skills-icons hidden" id="tools" ref={addToSkillRefs}>
             <div>
             <img src="./images/git.png" alt="git_icon" />
             <p className="icon-title">Git</p>
@@ -76,7 +99,7 @@ function Skills(props) {
           </div>
 
           {/* <!-- back-end --> */}
-          {/* <div className="skills-icons hidden" id="back-end">
+          <div className="skills-icons hidden" id="back-end" ref={addToSkillRefs}>
             <div>
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg" alt="nodejs_icon"/>
             <p className="icon-title">Node JS</p>
@@ -101,7 +124,7 @@ function Skills(props) {
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" alt="express_icon"/>
             <p className="icon-title">Express</p>
             </div>
-          </div>  */}
+          </div>  
         </div>
       </div>
     </section>

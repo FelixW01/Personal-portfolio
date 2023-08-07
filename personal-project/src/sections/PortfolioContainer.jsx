@@ -34,7 +34,7 @@ function PortfolioContainer() {
     <>
     <Navbar />
     <Home addToRefs={addToRefs}/>
-    <Skills addToRefs={addToRefs}/>
+    <Skills />
     <Projects addToRefs={addToRefs}/>
     <About addToRefs={addToRefs}/>
     <Contact />

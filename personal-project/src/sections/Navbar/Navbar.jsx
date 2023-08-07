@@ -1,6 +1,27 @@
 import './Navbar.css'
+import { useRef, useEffect, useState} from 'react';
 
 function Navbar() {
+  const navRefs = useRef([]);
+  navRefs.current = [];
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('nav-link--scrolled');
+        }
+    });
+    })
+    navRefs.current.forEach((ref) => observer.observe(ref))
+  }, [])
+
+  const addToNavRefs = (ref) => {
+    if(ref && !navRefs.current.includes(ref)) {
+      navRefs.current.push(ref);
+    }
+    console.log(navRefs.current)
+  }
     return (
         <>
     <nav className="navbar fixed-top navbar-expand-lg navbar-light">
@@ -24,7 +45,7 @@ function Navbar() {
           <ul className="navbar-nav ">
 
             <li className="nav-item">
-              <a className="nav-link" id="skills" href="#skillspage">Skills</a>
+              <a className="nav-link" id="navs" href="#navspage">navs</a>
             </li>
 
             <li className="nav-item">
