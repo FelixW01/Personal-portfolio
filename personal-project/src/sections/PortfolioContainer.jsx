@@ -10,13 +10,33 @@ import { useRef, useEffect, useState} from 'react';
 
 
 function PortfolioContainer() {
+  const myRefs = useRef([]);
+  myRefs.current = [];
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+    });
+    })
+    myRefs.current.forEach((ref) => observer.observe(ref))
+  }, [])
+
+  const addToRefs = (ref) => {
+    if(ref && !myRefs.current.includes(ref)) {
+      myRefs.current.push(ref);
+    }
+    console.log(myRefs.current)
+  }
   return (
     <>
     <Navbar />
-    <Home />
-    <Skills />
-    <Projects />
-    <About />
+    <Home addToRefs={addToRefs}/>
+    <Skills addToRefs={addToRefs}/>
+    <Projects addToRefs={addToRefs}/>
+    <About addToRefs={addToRefs}/>
     <Contact />
      <Footer />
     </>

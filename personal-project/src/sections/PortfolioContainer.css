@@ -76,7 +76,8 @@ body {
 /* icons */
 
 /* fade in animation */
-/* .hidden {
+
+.hidden {
   opacity: 0;
   filter: blur(1px);
   transform: translateX(8%);
@@ -100,5 +101,6 @@ body {
   .hidden2 {
     transition: none;
   }
-} */
+}
+
 /* fade in animation */

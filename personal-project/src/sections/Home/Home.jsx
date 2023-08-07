@@ -1,10 +1,10 @@
 import './Home.css'
 
-function Home() {
+function Home(props) {
 
     return (
     <>
-    <section className="homepage-container hidden2" id="homepage">
+    <section className="homepage-container hidden2" id="homepage" ref={props.addToRefs}>
       <div className="content-div home-content">
         <div>
           <h1>Hi, I'm <span className="h1-span">Felix</span>.</h1>

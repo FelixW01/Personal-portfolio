@@ -1,6 +1,6 @@
 import './Skills.css'
 
-function Skills() {
+function Skills(props) {
     return (
         <>
         <section className="skills-container" id="skillspage">
@@ -19,7 +19,7 @@ function Skills() {
           </div>
           <div id="initial-content"></div>
           {/* <!-- front-end | initial icons --> */}
-          <div className="initial-icons hidden" id="front-end">
+          <div className="initial-icons hidden" id="front-end" ref={props.addToRefs}>
             <div>
             <img src="../../dist/assets/images/react.png" alt="react_icon" />
             <p className="icon-title">React</p>

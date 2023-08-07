@@ -1,13 +1,15 @@
 import './Projects.css'
 
-function Projects() {
+
+function Projects( props ) {
+  
     return (
         <>
     <section className="projects-container" id="projectspage">
       <h1 className="projects-title">Projects</h1>
       <div>
         {/* <!-- project 1 --> */}
-        <div className="projects-main hidden2">
+        <div className="projects-main hidden2" ref={props.addToRefs}>
           <div className="projects-desc">
             <h2>The Movie Forum</h2>
             <div className="projects-icons-div">
@@ -74,7 +76,7 @@ function Projects() {
           </div>
         </div>
         {/* <!-- project 2 --> */}
-        <div className="projects-main hidden2">
+        <div className="projects-main hidden2" ref={props.addToRefs}>
           <div className="projects-vid">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/a_W2GmhaA_k" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
           </div>
@@ -116,7 +118,7 @@ function Projects() {
           </div>
         </div>
         {/* <!-- project 3 --> */}
-        <div className="projects-main hidden2">
+        <div className="projects-main hidden2" ref={props.addToRefs}>
           <div className="projects-desc">
             <h2>Personal Portfolio</h2>
             <img src="../../dist/assets/images/js.png" 

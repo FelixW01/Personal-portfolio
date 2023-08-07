@@ -21,7 +21,7 @@ function Contact() {
             name="contact-form"
             className="main-form"
             data-netlify="true"
-            onSubmit="submit"
+            // onSubmit="submit"
             method="POST"
             data-netlify-honeypot="bot-field"
             action="/success/"
