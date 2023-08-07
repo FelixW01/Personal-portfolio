@@ -3,7 +3,7 @@ import './About.css'
 function About() {
     return (
         <>
-    <div class="top-separator"></div>
+    <div className="top-separator"></div>
     <section className="about-container" id="aboutpage">
       <h1 className="about-h1">About</h1>
       <div className="about-div">

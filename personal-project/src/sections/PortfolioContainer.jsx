@@ -6,18 +6,19 @@ import About from './About/About'
 import Contact from './Contact/Contact'
 import Footer from './Footer/Footer'
 import './PortfolioContainer.css'
+import { useRef, useEffect, useState} from 'react';
 
 
 function PortfolioContainer() {
   return (
     <>
-      <Navbar />
-      <Home />
-      <Skills />
-      <Projects />
-      <About />
-      <Contact />
-      <Footer />
+    <Navbar />
+    <Home />
+    <Skills />
+    <Projects />
+    <About />
+    <Contact />
+     <Footer />
     </>
   )
 }

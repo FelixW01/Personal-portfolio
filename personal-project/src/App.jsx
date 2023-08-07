@@ -1,4 +1,3 @@
-import './App.css'
 import PortfolioContainer from './sections/PortfolioContainer'
 
 function App() {
