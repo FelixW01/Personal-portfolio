@@ -22,7 +22,6 @@ function Skills() {
     if(ref && !skillRefs.current.includes(ref)) {
       skillRefs.current.push(ref);
     }
-    console.log(skillRefs.current)
   }
     return (
         <>
@@ -72,27 +71,27 @@ function Skills() {
           {/* <!-- tools icons --> */}
           <div className="skills-icons hidden" id="tools" ref={addToSkillRefs}>
             <div>
-            <img src="./images/git.png" alt="git_icon" />
+            <img src="../../dist/assets/images/git.png" alt="git_icon" />
             <p className="icon-title">Git</p>
             </div>
 
             <div>
-            <img src="./images/heroku.png" alt="heroku_icon" />
+            <img src="../../dist/assets/images/heroku.png" alt="heroku_icon" />
             <p className="icon-title">Heroku</p>
             </div>
 
             <div>
-            <img src="./images/oauth.png" alt="oauth_icon" />
+            <img src="../../dist/assets/images/oauth.png" alt="oauth_icon" />
             <p className="icon-title">OAuth</p>
             </div>
 
             <div>
-            <img src="./images/jest.png" alt="jest_icon" />
+            <img src="../../dist/assets/images/jest.png" alt="jest_icon" />
             <p className="icon-title">Jest</p>
             </div>
 
             <div>
-            <img src="./images/insomnia.png" alt="insomnia_icon" />
+            <img src="../../dist/assets/images/insomnia.png" alt="insomnia_icon" />
             <p className="icon-title">Insomnia</p>
             </div>
 

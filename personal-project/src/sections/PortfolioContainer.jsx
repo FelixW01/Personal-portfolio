@@ -28,7 +28,6 @@ function PortfolioContainer() {
     if(ref && !myRefs.current.includes(ref)) {
       myRefs.current.push(ref);
     }
-    console.log(myRefs.current)
   }
   return (
     <>

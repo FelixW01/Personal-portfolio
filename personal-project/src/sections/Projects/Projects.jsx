@@ -72,13 +72,13 @@ function Projects( props ) {
             </div>
           </div>
           <div className="projects-vid">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/1zzl37IlHMU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/1zzl37IlHMU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
           </div>
         </div>
         {/* <!-- project 2 --> */}
         <div className="projects-main hidden2" ref={props.addToRefs}>
           <div className="projects-vid">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/a_W2GmhaA_k" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/a_W2GmhaA_k" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
           </div>
           <div className="projects-desc2">
             <h2>City Snap</h2>
@@ -148,7 +148,7 @@ function Projects( props ) {
             </div>
           </div>
           <div className="projects-vid">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/AMk6QMj5zTw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/AMk6QMj5zTw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
           </div>
         </div>
       </div>
