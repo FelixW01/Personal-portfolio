@@ -6,15 +6,16 @@
 html,
 #root,
 .App {
-  overflow-x: hidden;
   scroll-behavior: smooth;
   height: 100%;
 }
+
 body {
   font-family: "Open Sans", sans-serif;
   background-color: var(--light);
   height: 100vh;
   position: relative;
+  overflow-x: hidden;
 }
 
 /* seperator */
