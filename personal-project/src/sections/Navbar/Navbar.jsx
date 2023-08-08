@@ -2,15 +2,7 @@ import './Navbar.css'
 import { useRef, useEffect, useState} from 'react';
 
 function Navbar() {
-  const navRefs = useRef([]);
-  navRefs.current = [];
   const [navbar, setNavbar] = useState(false)
-
-  const addToNavRefs = (ref) => {
-    if(ref && !navRefs.current.includes(ref)) {
-      navRefs.current.push(ref);
-    }
-  }
 
   const handleScroll = () => {
     if (window.scrollY >= 300) {
@@ -45,7 +37,7 @@ function Navbar() {
           <ul className="navbar-nav ">
 
             <li className="nav-item">
-              <a className={navbar ? "nav-link nav-link--scrolled" : "nav-link"} id="navs" href="#navspage">Skills</a>
+              <a className={navbar ? "nav-link nav-link--scrolled" : "nav-link"} id="navs" href="#skillspage">Skills</a>
             </li>
 
             <li className="nav-item">

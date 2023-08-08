@@ -4,7 +4,9 @@ import { useRef, useEffect, useState} from 'react';
 function Skills() {
   const skillRefs = useRef([]);
   skillRefs.current = [];
-
+  const [toolHover, setToolHover] = useState(false)
+  const [yolkHover, setYolkHover] = useState(false)
+  const [stackTitle, setStackTitle] = useState('Front-end')
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -23,6 +25,28 @@ function Skills() {
       skillRefs.current.push(ref);
     }
   }
+  
+  function handleMouseEnter(event) {
+    event.stopPropagation();
+    setToolHover(true)
+    setStackTitle('Tools')
+  }
+  function handleMouseLeave(event) {
+    event.stopPropagation();
+    setToolHover(false)
+    setStackTitle('Front-end')
+  }
+  function handleYolkEnter(event) {
+    event.stopPropagation();
+    setToolHover(false)
+    setYolkHover(true)
+    setStackTitle('Back-end')
+  }
+  function handleYolkLeave(event) {
+    event.stopPropagation();
+    setYolkHover(false)
+    setStackTitle('Tools')
+  }
     return (
         <>
         <section className="skills-container" id="skillspage">
@@ -31,17 +55,17 @@ function Skills() {
       <div className="skills-div">
         <div className="art-container">
           <div className="art-title"><h2>Hover over me!</h2></div>
-          <div className="art" id="egg">
-            <div className="yolk" id="yolk"></div>
+          <div className="art" id="egg" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <div className="yolk" id="yolk" onMouseEnter={handleYolkEnter} onMouseLeave={handleYolkLeave}></div>
           </div>
         </div>
         <div className="skills-display">
           <div className="skills-title-div">
-            <h1 className="skills-title">Front-end</h1>
+            <h1 className="skills-title">{stackTitle}</h1>
           </div>
           <div id="initial-content"></div>
           {/* <!-- front-end | initial icons --> */}
-          <div className="initial-icons hidden" id="front-end" ref={addToSkillRefs}>
+          <div className={toolHover || yolkHover ? "initial-icons icons-hidden hidden" : "initial-icons hidden"} id="front-end" ref={addToSkillRefs}>
             <div>
             <img src="../../dist/assets/images/react.png" alt="react_icon" />
             <p className="icon-title">React</p>
@@ -69,7 +93,7 @@ function Skills() {
           </div>
 
           {/* <!-- tools icons --> */}
-          <div className="skills-icons hidden" id="tools" ref={addToSkillRefs}>
+          <div className={toolHover ? "skills-icons icons-reveal hidden": "skills-icons icons-hidden hidden"} id="tools" ref={addToSkillRefs}>
             <div>
             <img src="../../dist/assets/images/git.png" alt="git_icon" />
             <p className="icon-title">Git</p>
@@ -98,7 +122,7 @@ function Skills() {
           </div>
 
           {/* <!-- back-end --> */}
-          <div className="skills-icons hidden" id="back-end" ref={addToSkillRefs}>
+          <div className={yolkHover ? "skills-icons hidden" : "skills-icons icons-hidden hidden"} id="back-end" ref={addToSkillRefs}>
             <div>
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg" alt="nodejs_icon"/>
             <p className="icon-title">Node JS</p>
