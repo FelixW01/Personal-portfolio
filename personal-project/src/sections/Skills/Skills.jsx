@@ -7,6 +7,8 @@ function Skills() {
   const [toolHover, setToolHover] = useState(false)
   const [yolkHover, setYolkHover] = useState(false)
   const [stackTitle, setStackTitle] = useState('Front-end')
+
+  //animation using Intersection observer, for each refs.
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -25,23 +27,26 @@ function Skills() {
       skillRefs.current.push(ref);
     }
   }
-  
+  // Mouse enters egg, sets stack to tools and title to tools
   function handleMouseEnter(event) {
     event.stopPropagation();
     setToolHover(true)
     setStackTitle('Tools')
   }
+  // Mouse leaves egg, sets stack to front-end and title to front-end
   function handleMouseLeave(event) {
     event.stopPropagation();
     setToolHover(false)
     setStackTitle('Front-end')
   }
+    // Mouse enters yolk, sets stack to back-end and title to back-end
   function handleYolkEnter(event) {
     event.stopPropagation();
     setToolHover(false)
     setYolkHover(true)
     setStackTitle('Back-end')
   }
+    // Mouse leaves yolk, sets stack to tools and title to tools
   function handleYolkLeave(event) {
     event.stopPropagation();
     setYolkHover(false)
