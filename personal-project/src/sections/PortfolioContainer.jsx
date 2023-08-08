@@ -31,7 +31,6 @@ function PortfolioContainer() {
   }
   return (
     <>
-    <Navbar />
     <Home addToRefs={addToRefs}/>
     <Skills />
     <Projects addToRefs={addToRefs}/>

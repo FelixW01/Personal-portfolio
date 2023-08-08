@@ -1,17 +1,16 @@
 import './Navbar.css'
 import { useRef, useEffect, useState} from 'react';
 
-function Navbar() {
+function Navbar( { target } ) {
   const [navbar, setNavbar] = useState(false)
 
-  const handleScroll = () => {
-    if (window.scrollY >= 300) {
+  useEffect(() => {
+    if (!target) {
       setNavbar(true);
     } else {
       setNavbar(false);
     }
-  }
-  window.addEventListener('scroll', handleScroll)
+  }, [target])
 
 
     return (

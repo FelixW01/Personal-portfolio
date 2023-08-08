@@ -1,12 +1,38 @@
 import './Home.css'
+import Navbar from '../Navbar/Navbar.jsx'
+import { useRef, useEffect, useState} from 'react';
 
-function Home(props) {
+
+
+function Home( { addToRefs } ) {
+const [target, setTarget] = useState(true);
+const targetRef = useRef([]);
+
+const addToTargetRef = (ref) => {
+    if(ref) {
+      targetRef.current.push(ref);
+    }
+  }
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      const entry = entries[0]
+        if (entry.isIntersecting) {
+            setTarget(true);
+        }
+        if (!entry.isIntersecting) {
+          setTarget(false)
+        }
+    })
+    targetRef.current.forEach((ref) => observer.observe(ref))
+  }, [target])
 
     return (
+      
     <>
-    <section className="homepage-container hidden2" id="homepage" ref={props.addToRefs}>
+    <Navbar target={target}/>
+    <section className="homepage-container hidden2" id="homepage" ref={addToRefs}>
       <div className="content-div home-content">
-        <div>
+        <div ref={addToTargetRef}>
           <h1>Hi, I'm <span className="h1-span">Felix</span>.</h1>
           <h1>I'm a <span className="h1-span">full stack</span> web developer.</h1>
           <div className="icon-div">

@@ -1,6 +1,6 @@
 import './About.css'
 
-function About(props) {
+function About( { addToRefs } ) {
     return (
         <>
     <div className="top-separator"></div>
@@ -14,7 +14,7 @@ function About(props) {
             alt="profile_picture_icon"
           />
         </div>
-        <div className="about-content hidden2" ref={props.addToRefs}>
+        <div className="about-content hidden2" ref={addToRefs}>
           <h2>
             I'm Felix, a passionate and innovative Full Stack Web Developer with
             a strong foundation in both front-end and back-end technologies.

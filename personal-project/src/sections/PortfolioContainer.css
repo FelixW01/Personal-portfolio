@@ -8,6 +8,7 @@ html,
 .App {
   scroll-behavior: smooth;
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -15,7 +16,6 @@ body {
   background-color: var(--light);
   height: 100vh;
   position: relative;
-  overflow-x: hidden;
 }
 
 /* seperator */

@@ -50,6 +50,7 @@ function Skills() {
   function handleYolkLeave(event) {
     event.stopPropagation();
     setYolkHover(false)
+    setToolHover(true)
     setStackTitle('Tools')
   }
     return (
