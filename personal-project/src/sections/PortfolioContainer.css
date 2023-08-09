@@ -1,0 +1,106 @@
+:root {
+  --light: #f9f5f6;
+  --blue: #769fcd;
+  --dark: #393646;
+}
+html,
+#root,
+.App {
+  scroll-behavior: smooth;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--light);
+  height: 100vh;
+  position: relative;
+}
+
+/* seperator */
+.separator {
+  max-width: 0;
+  height: 0;
+  border-right: 100vw solid transparent;
+  border-top: 12vw solid var(--light);
+  margin-top: -12vw;
+  transform: rotate(180deg);
+  padding-top: 2px;
+}
+.top-separator {
+  max-width: 0;
+  height: 0;
+  border-right: 100vw solid transparent;
+  border-top: 12vw solid var(--blue);
+  margin-top: -12vw;
+  transform: rotate(180deg);
+  padding-top: 3px;
+}
+@media only screen and (max-width: 1600px) {
+  .top-separator {
+    padding-top: 6px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .top-separator {
+    padding-top: 10px;
+  }
+}
+@media only screen and (max-width: 933px) {
+  .top-separator {
+    padding-top: 13px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .top-separator {
+    display: none;
+  }
+  .separator {
+    display: none;
+  }
+}
+/* seperator */
+
+/* icons */
+.icon-div {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+.icons {
+  margin-right: 0.75rem;
+  font-size: 2rem;
+  color: var(--blue);
+}
+/* icons */
+
+/* fade in animation */
+
+.hidden {
+  opacity: 0;
+  filter: blur(1px);
+  transform: translateX(8%);
+  transition: all 1s;
+}
+.hidden2 {
+  opacity: 0;
+  filter: blur(1px);
+  transform: translateX(8%);
+  transition: all 1s;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+  .hidden2 {
+    transition: none;
+  }
+}
+
+/* fade in animation */

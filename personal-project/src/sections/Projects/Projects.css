@@ -1,0 +1,136 @@
+/* projects page */
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 165svh;
+}
+.projects-title {
+  font-weight: 400;
+  display: inline;
+  margin: 4rem 0;
+  font-size: 3rem;
+}
+.projects-main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+.projects-desc {
+  margin: 1rem 3rem 2.25rem 0;
+}
+.projects-desc h2 {
+  font-weight: 400;
+}
+.projects-desc2 h2 {
+  font-weight: 400;
+}
+.projects-desc2 {
+  font-size: 1.25rem;
+  max-width: 40ch;
+  margin: 0 0 2rem 3rem;
+}
+.projects-icons {
+  margin-right: 0.3rem;
+  max-width: 3vh;
+}
+.projects-video {
+  max-height: 30vh;
+  border-radius: 0.5rem;
+}
+.projects-video:hover {
+  transform: rotate(0.25deg);
+}
+.projects-summary {
+  font-size: 1.25rem;
+  max-width: 40ch;
+}
+.live-btn {
+  color: var(--blue);
+}
+.live-btn:hover {
+  background-color: var(--blue);
+}
+.source-btn {
+  background-color: var(--blue);
+  color: var(--light);
+}
+.source-btn:hover {
+  background-color: var(--light);
+  color: var(--blue);
+}
+iframe {
+  border: 0px;
+}
+@media only screen and (max-width: 1275px) {
+  .projects-title {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .projects-desc h2 {
+    font-size: 1.5rem;
+  }
+  .projects-desc2 h2 {
+    font-size: 1.5rem;
+  }
+  .projects-title {
+    font-size: 2.5rem;
+  }
+  .projects-container {
+    min-height: 147vh;
+  }
+  .projects-video {
+    height: 24vh;
+    width: 42vw;
+  }
+  .projects-summary {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 933px) {
+  .projects-desc h2 {
+    font-size: 1rem;
+  }
+  .projects-desc2 h2 {
+    font-size: 1rem;
+  }
+  .projects-container {
+    min-height: 147vh;
+  }
+  .projects-summary {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .projects-container {
+    min-height: 120vh;
+  }
+  .projects-video {
+    height: 18vh;
+  }
+  .projects-summary {
+    font-size: 0.8rem;
+  }
+  .btn {
+    font-size: 0.75rem;
+  }
+  .projects-main {
+    padding-bottom: 1.5rem;
+  }
+  .collaborators {
+    font-size: 0.75rem;
+    margin: 0.2rem 0;
+  }
+  .projects-icons {
+    max-width: 2vh;
+  }
+}
+@media (max-width: 768px) and (min-height: 1024px) {
+  .projects-container {
+    min-height: 100%;
+  }
+}
+/* projects page */
