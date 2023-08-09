@@ -60,7 +60,7 @@ function Skills() {
       <div></div>
       <div className="skills-div">
         <div className="art-container">
-          <div className="art-title"><h2>Hover over me!</h2></div>
+          <div className="art-title"><h2>Hover me!</h2></div>
           <div className="art" id="egg" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <div className="yolk" id="yolk" onMouseEnter={handleYolkEnter} onMouseLeave={handleYolkLeave}></div>
           </div>
