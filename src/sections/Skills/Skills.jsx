@@ -60,7 +60,7 @@ function Skills() {
       <div></div>
       <div className="skills-div">
         <div className="art-container">
-          <div className="art-title"><h2>Hover over me!</h2></div>
+          <div className="art-title"><h2>Hover me!</h2></div>
           <div className="art" id="egg" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <div className="yolk" id="yolk" onMouseEnter={handleYolkEnter} onMouseLeave={handleYolkLeave}></div>
           </div>
@@ -73,27 +73,27 @@ function Skills() {
           {/* <!-- front-end | initial icons --> */}
           <div className={toolHover || yolkHover ? "initial-icons icons-hidden hidden" : "initial-icons hidden"} id="front-end" ref={addToSkillRefs}>
             <div>
-            <img src="../../dist/assets/images/react.png" alt="react_icon" />
+            <img src="dist/assets/images/react.png" alt="react_icon" />
             <p className="icon-title">React</p>
             </div>
 
             <div>
-            <img src="../../dist/assets/images/css.png" alt="css_icon" />
+            <img src="dist/assets/images/css.png" alt="css_icon" />
             <p className="icon-title">CSS 3</p>
             </div>
 
             <div>
-            <img src="../../dist/assets/images/html.png" alt="html_icon" />
+            <img src="dist/assets/images/html.png" alt="html_icon" />
             <p className="icon-title">HTML 5</p>
             </div>
 
             <div>
-            <img src="../../dist/assets/images/js.png" alt="js_icon" />
+            <img src="dist/assets/images/js.png" alt="js_icon" />
             <p className="icon-title">Javascript</p>
             </div>
 
             <div>
-            <img src="../../dist/assets/images/bootstrap.png" alt="bootstrap_icon" />
+            <img src="dist/assets/images/bootstrap.png" alt="bootstrap_icon" />
             <p className="icon-title">Bootstrap</p>
             </div>
           </div>
@@ -101,27 +101,27 @@ function Skills() {
           {/* <!-- tools icons --> */}
           <div className={toolHover ? "skills-icons icons-reveal hidden": "skills-icons icons-hidden hidden"} id="tools" ref={addToSkillRefs}>
             <div>
-            <img src="../../dist/assets/images/git.png" alt="git_icon" />
+            <img src="dist/assets/images/git.png" alt="git_icon" />
             <p className="icon-title">Git</p>
             </div>
 
             <div>
-            <img src="../../dist/assets/images/heroku.png" alt="heroku_icon" />
+            <img src="dist/assets/images/heroku.png" alt="heroku_icon" />
             <p className="icon-title">Heroku</p>
             </div>
 
             <div>
-            <img src="../../dist/assets/images/oauth.png" alt="oauth_icon" />
+            <img src="dist/assets/images/oauth.png" alt="oauth_icon" />
             <p className="icon-title">OAuth</p>
             </div>
 
             <div>
-            <img src="../../dist/assets/images/jest.png" alt="jest_icon" />
+            <img src="dist/assets/images/jest.png" alt="jest_icon" />
             <p className="icon-title">Jest</p>
             </div>
 
             <div>
-            <img src="../../dist/assets/images/insomnia.png" alt="insomnia_icon" />
+            <img src="dist/assets/images/insomnia.png" alt="insomnia_icon" />
             <p className="icon-title">Insomnia</p>
             </div>
 
