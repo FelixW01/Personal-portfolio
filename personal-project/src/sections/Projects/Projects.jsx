@@ -1,15 +1,53 @@
 import './Projects.css'
+import ProjectsCard from './ProjectsCard.jsx'
+const projectsArray = [
+  {
+    icons: [
+        {
+          src: "../../dist/assets/images/nodejs.png",
+          title: "NodeJS",
+          alt: "NodeJS"
+        },
+        {
+          src: "../../dist/assets/images/js.png",
+          title: "JavaScript",
+          alt: "JS"
+        },
+    ],
+    title: "The Movie Forum",
+    description: "An interactive, real-time forum app where users can congregate, interact and coverse about upcoming movies provided by the TMDB api.",
+    live: "https://dry-cove-24471-f11ca301104d.herokuapp.com/",
+    github: "movie-forum-app",
+    video: "https://www.youtube-nocookie.com/embed/1zzl37IlHMU"
+  },
+]
 
+// json array
+// all of the dynamic content
+// loop through the array
+// for each item in the array, make a card
 
+// <card json={json}/>
 function Projects( props ) {
-  
+  const cards = projectsArray.map((project) => {
+    return (
+      <ProjectsCard key={project.title} {...project}/>
+    )
+  })
     return (
         <>
+        
     <section className="projects-container" id="projectspage">
       <h1 className="projects-title">Projects</h1>
       <div>
+      <div className="projects-main hidden2" ref={props.addToRefs}>
+        {cards}
+      </div>
+      
+
         {/* <!-- project 1 --> */}
-        <div className="projects-main hidden2" ref={props.addToRefs}>
+
+        {/* <div className="projects-main hidden2" ref={props.addToRefs}>
           <div className="projects-desc">
             <h2>The Movie Forum</h2>
             <div className="projects-icons-div">
@@ -74,9 +112,11 @@ function Projects( props ) {
           <div className="projects-vid">
             <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/1zzl37IlHMU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
           </div>
-        </div>
+        </div> */}
+
         {/* <!-- project 2 --> */}
-        <div className="projects-main hidden2" ref={props.addToRefs}>
+
+        {/* <div className="projects-main hidden2" ref={props.addToRefs}>
           <div className="projects-vid">
             <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/a_W2GmhaA_k" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
           </div>
@@ -116,9 +156,11 @@ function Projects( props ) {
               <a href="https://github.com/IlirHajdari/city-snap" target="_blank"><button className="btn btn-primary source-btn" type="button">Source Code</button></a>
             </div>
           </div>
-        </div>
+        </div> */}
+
         {/* <!-- project 3 --> */}
-        <div className="projects-main hidden2" ref={props.addToRefs}>
+        
+        {/* <div className="projects-main hidden2" ref={props.addToRefs}>
           <div className="projects-desc">
             <h2>Personal Portfolio</h2>
             <img src="../../dist/assets/images/js.png" 
@@ -150,7 +192,8 @@ function Projects( props ) {
           <div className="projects-vid">
             <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/AMk6QMj5zTw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
           </div>
-        </div>
+        </div> */}
+
       </div>
     </section>
         </>
