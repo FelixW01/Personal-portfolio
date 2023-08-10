@@ -14,13 +14,13 @@ function Projects( props ) {
             <h2>The Movie Forum</h2>
             <div className="projects-icons-div">
               <img
-                src="../../dist/assets/images/nodejs.png"
+                src="/images/nodejs.png"
                 title="NodeJS"
                 className="projects-icons"
                 alt="nodejs_icon"
               />
               <img 
-                src="../../dist/assets/images/js.png" 
+                src="/images/js.png" 
                 title="JavaScript"
                 className="projects-icons" 
                 alt="js_icon" 
@@ -44,7 +44,7 @@ function Projects( props ) {
                 className="projects-icons"
               />
                 <img
-                  src="../../dist/assets/images/tmdb.png"
+                  src="/images/tmdb.png"
                   title="TMDB API"
                   className="projects-icons"
                   alt="TMDB_icon"
@@ -83,25 +83,25 @@ function Projects( props ) {
           <div className="projects-desc2">
             <h2>City Snap</h2>
             <img
-              src="../../dist/assets/images/nodejs.png"
+              src="/images/nodejs.png"
               title="NodeJS"
               className="projects-icons"
               alt="node_icon"
             />
             <img 
-              src="../../dist/assets/images/js.png" 
+              src="/images/js.png" 
               title="JavaScript"
               className="projects-icons" 
               alt="js_icon" 
             />
             <img
-              src="../../dist/assets/images/mapbox.png"
+              src="/images/mapbox.png"
               title="Mapbox API"
               className="projects-icons"
               alt="mapbox_icon"
             />
             <img
-              src="../../dist/assets/images/google-maps.png"
+              src="/images/google-maps.png"
               title="Google Maps API"
               className="projects-icons"
               alt="google-maps_icon"
@@ -121,18 +121,18 @@ function Projects( props ) {
         <div className="projects-main hidden2" ref={props.addToRefs}>
           <div className="projects-desc">
             <h2>Personal Portfolio</h2>
-            <img src="../../dist/assets/images/js.png" 
+            <img src="/images/js.png" 
               title="JavaScript"
               className="projects-icons" 
               alt="js_icon" />
             <img
-              src="../../dist/assets/images/html.png"
+              src="/images/html.png"
               title="HTML"
               className="projects-icons"
               alt="html_icon"
             />
             <img
-              src="../../dist/assets/images/css.png"
+              src="/images/css.png"
               title="CSS"
               className="projects-icons"
               alt="css_icon"
