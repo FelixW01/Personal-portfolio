@@ -9,7 +9,7 @@ function About( { addToRefs } ) {
       <div className="about-div">
         <div className="about-img">
           <img
-            src="../../dist/assets/images/profile-pic3.png"
+            src="/images/profile-pic3.png"
             className="profile-pic"
             alt="profile_picture_icon"
           />

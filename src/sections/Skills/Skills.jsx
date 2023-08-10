@@ -73,27 +73,27 @@ function Skills() {
           {/* <!-- front-end | initial icons --> */}
           <div className={toolHover || yolkHover ? "initial-icons icons-hidden hidden" : "initial-icons hidden"} id="front-end" ref={addToSkillRefs}>
             <div>
-            <img src="Images/react.png" alt="react_icon" />
+            <img src="/images/react.png" alt="react_icon" />
             <p className="icon-title">React</p>
             </div>
 
             <div>
-            <img src="images/css.png" alt="css_icon" />
+            <img src="/images/css.png" alt="css_icon" />
             <p className="icon-title">CSS 3</p>
             </div>
 
             <div>
-            <img src="images/html.png" alt="html_icon" />
+            <img src="/images/html.png" alt="html_icon" />
             <p className="icon-title">HTML 5</p>
             </div>
 
             <div>
-            <img src="images/js.png" alt="js_icon" />
+            <img src="/images/js.png" alt="js_icon" />
             <p className="icon-title">Javascript</p>
             </div>
 
             <div>
-            <img src="images/bootstrap.png" alt="bootstrap_icon" />
+            <img src="/images/bootstrap.png" alt="bootstrap_icon" />
             <p className="icon-title">Bootstrap</p>
             </div>
           </div>
@@ -101,27 +101,27 @@ function Skills() {
           {/* <!-- tools icons --> */}
           <div className={toolHover ? "skills-icons icons-reveal hidden": "skills-icons icons-hidden hidden"} id="tools" ref={addToSkillRefs}>
             <div>
-            <img src="images/git.png" alt="git_icon" />
+            <img src="/images/git.png" alt="git_icon" />
             <p className="icon-title">Git</p>
             </div>
 
             <div>
-            <img src="images/heroku.png" alt="heroku_icon" />
+            <img src="/images/heroku.png" alt="heroku_icon" />
             <p className="icon-title">Heroku</p>
             </div>
 
             <div>
-            <img src="images/oauth.png" alt="oauth_icon" />
+            <img src="/images/oauth.png" alt="oauth_icon" />
             <p className="icon-title">OAuth</p>
             </div>
 
             <div>
-            <img src="images/jest.png" alt="jest_icon" />
+            <img src="/images/jest.png" alt="jest_icon" />
             <p className="icon-title">Jest</p>
             </div>
 
             <div>
-            <img src="images/insomnia.png" alt="insomnia_icon" />
+            <img src="/images/insomnia.png" alt="insomnia_icon" />
             <p className="icon-title">Insomnia</p>
             </div>
 
