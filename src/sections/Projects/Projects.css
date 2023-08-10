@@ -36,11 +36,10 @@
   margin-right: 0.3rem;
   max-width: 3vh;
 }
-.projects-video {
-  max-height: 30vh;
+.projects-vid iframe {
   border-radius: 0.5rem;
 }
-.projects-video:hover {
+.projects-vid:hover {
   transform: rotate(0.25deg);
 }
 .projects-summary {
@@ -61,8 +60,9 @@
   background-color: var(--light);
   color: var(--blue);
 }
-iframe {
-  border: 0px;
+.btn-link {
+  display: inline;
+  text-decoration: none;
 }
 @media only screen and (max-width: 1275px) {
   .projects-title {
@@ -82,15 +82,27 @@ iframe {
   .projects-container {
     min-height: 147vh;
   }
-  .projects-video {
-    height: 24vh;
-    width: 42vw;
-  }
   .projects-summary {
     font-size: 1rem;
   }
 }
+@media only screen and (max-width: 1000px) {
+  .projects-vid iframe {
+    max-height: 35vh;
+    max-width: 56vh;
+  }
+  .projects-summary {
+    font-size: 1rem;
+  }
+  .projects-container {
+    min-height: 170vh;
+  }
+}
 @media only screen and (max-width: 933px) {
+  .projects-vid iframe {
+    max-height: 25vh;
+    max-width: 40vh;
+  }
   .projects-desc h2 {
     font-size: 1rem;
   }
@@ -98,31 +110,26 @@ iframe {
     font-size: 1rem;
   }
   .projects-container {
-    min-height: 147vh;
-  }
-  .projects-summary {
-    font-size: 1rem;
+    min-height: 145vh;
   }
 }
 @media only screen and (max-width: 768px) {
+  .projects-vid iframe {
+    max-height: 23vh;
+    max-width: 37vh;
+  }
   .projects-container {
     min-height: 120vh;
   }
-  .projects-video {
-    height: 18vh;
-  }
   .projects-summary {
     font-size: 0.8rem;
+    max-width: 35ch;
   }
   .btn {
     font-size: 0.75rem;
   }
   .projects-main {
     padding-bottom: 1.5rem;
-  }
-  .collaborators {
-    font-size: 0.75rem;
-    margin: 0.2rem 0;
   }
   .projects-icons {
     max-width: 2vh;
@@ -133,4 +140,31 @@ iframe {
     min-height: 100%;
   }
 }
+@media only screen and (max-width: 620px) {
+  .projects-main {
+    display: block;
+  }
+  .projects-summary {
+    font-size: 1rem;
+    max-width: 50ch;
+    margin-bottom: 0.5rem;
+  }
+  .projects-vid iframe {
+    max-height: 38vh;
+    max-width: 61vh;
+  }
+  .projects-desc {
+    margin-bottom: 1rem;
+  }
+  .projects-desc2 {
+    margin: 1rem 0;
+  }
+  .projects-icons {
+    max-width: 1.8vh;
+  }
+  .projects-container {
+    min-height: 120vh;
+  }
+}
+
 /* projects page */

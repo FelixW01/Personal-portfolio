@@ -54,8 +54,8 @@ function Projects( props ) {
               An interactive, real-time forum app where users can congregate, interact and coverse about
               upcoming movies provided by the TMDB api.
             </p>
-            <div className="d-grid gap-2 d-md-block">
-            <a href="https://dry-cove-24471-f11ca301104d.herokuapp.com/" target="_blank">
+            <div>
+            <a href="https://dry-cove-24471-f11ca301104d.herokuapp.com/" target="_blank" className="btn-link">
               <button
                 className="btn btn-outline-primary live-btn"
                 type="button">
@@ -64,7 +64,8 @@ function Projects( props ) {
             </a>
 
               <a href="https://github.com/FelixW01/movie-forum-app/"
-                target="_blank"><button
+                target="_blank" className="btn-link">
+                <button
                 className="btn btn-outline-primary source-btn"
                 type="button">
                 Source Code
@@ -109,11 +110,13 @@ function Projects( props ) {
             <p className="projects-summary">
               Exploration at your fingertips. An interactive App that spins the globe onto the specific geolocation of a city that the user has specified. In addition, the user will be able to view a well-known image from the locale.
             </p>
-            <div className="d-grid gap-2 d-md-block">
-              <a href="https://ilirhajdari.github.io/city-snap/" target="_blank"><button className="btn btn-outline-primary live-btn" type="button">
+            <div>
+              <a href="https://ilirhajdari.github.io/city-snap/" target="_blank" className="btn-link">
+              <button className="btn btn-outline-primary live-btn" type="button">
                 See Live
               </button></a>
-              <a href="https://github.com/IlirHajdari/city-snap" target="_blank"><button className="btn btn-primary source-btn" type="button">Source Code</button></a>
+              <a href="https://github.com/IlirHajdari/city-snap" target="_blank" className="btn-link">
+              <button className="btn btn-primary source-btn" type="button">Source Code</button></a>
             </div>
           </div>
         </div>
@@ -140,8 +143,9 @@ function Projects( props ) {
             <p className="projects-summary">
               A personal portfolio website with an elegant and minimalistic design to showcase personal projects and content.
             </p>
-            <div className="d-grid gap-2 d-md-block">
-              <a href="#homepage"><button className="btn btn-outline-primary live-btn" type="button">
+            <div>
+              <a href="#homepage" className="btn-link">
+              <button className="btn btn-outline-primary live-btn" type="button">
                 See Live
               </button></a>
               <a href="https://github.com/FelixW01/Personal-portfolio" target="_blank"><button className="btn btn-primary source-btn" type="button">Source Code</button></a>
