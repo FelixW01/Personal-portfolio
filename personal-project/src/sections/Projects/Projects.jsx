@@ -22,12 +22,7 @@ const projectsArray = [
   },
 ]
 
-// json array
-// all of the dynamic content
-// loop through the array
-// for each item in the array, make a card
 
-// <card json={json}/>
 function Projects( props ) {
   const cards = projectsArray.map((project) => {
     return (
