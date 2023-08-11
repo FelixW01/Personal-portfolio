@@ -4,6 +4,7 @@ function ProjectsCard( props ) {
 
   return (
     <>
+        <div className="projects-main hidden2" ref={props.addToRefs}>
           <div className="projects-desc">
             <h2>{props.title}</h2>
             <div className="projects-icons-div">
@@ -12,6 +13,7 @@ function ProjectsCard( props ) {
                 <img
                 src={icon.src}
                 title={icon.title}
+                key={icon.title}
                 className="projects-icons"
                 alt={`${icon.alt}_icon`}
               />)})}
@@ -40,7 +42,8 @@ function ProjectsCard( props ) {
           <div className="projects-vid">
             <iframe width="560" height="315" src={props.video} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
           </div> 
-        </>
+        </div>
+    </>
       )
 }
 

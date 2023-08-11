@@ -13,6 +13,26 @@ const projectsArray = [
           title: "JavaScript",
           alt: "JS"
         },
+        {
+          src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+          title: "Express",
+          alt: "Express"
+        },
+        {
+          src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-plain.svg",
+          title: "Sequelize",
+          alt: "sequelize.icon",
+        },
+        {
+          src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/handlebars/handlebars-original.svg",
+          title: "HandlebarsJS",
+          alt: "handlebars"
+        },
+        {
+          src: "/images/tmdb.png",
+          title: "TMDB API",
+          alt: "TMDB"
+        },
     ],
     title: "The Movie Forum",
     description: "An interactive, real-time forum app where users can congregate, interact and coverse about upcoming movies provided by the TMDB api.",
@@ -26,7 +46,7 @@ const projectsArray = [
 function Projects( props ) {
   const cards = projectsArray.map((project) => {
     return (
-      <ProjectsCard key={project.title} {...project}/>
+      <ProjectsCard addToRefs={props.addToRefs} key={project.title} {...project}/>
     )
   })
     return (
@@ -34,10 +54,8 @@ function Projects( props ) {
         
     <section className="projects-container" id="projectspage">
       <h1 className="projects-title">Projects</h1>
-      <div>
-      <div className="projects-main hidden2" ref={props.addToRefs}>
+      
         {cards}
-      </div>
       
 
         {/* <!-- project 1 --> */}
@@ -188,8 +206,6 @@ function Projects( props ) {
             <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/AMk6QMj5zTw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
           </div>
         </div> */}
-
-      </div>
     </section>
         </>
     )
