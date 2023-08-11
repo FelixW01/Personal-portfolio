@@ -7,7 +7,7 @@
 https://github.com/FelixW01/personal-portfolio
 
 ## Description
-Welcome to my personal portfolio website. A platform with an elegant and minimalistic design to showcase personal projects and content.
+Welcome to my personal portfolio website. A platform with an elegant, minimalistic design created with ReactJS created for the purpose of showcasing personal projects and contents.
 
 ## Table of Contents
 - [App Demo](#app-demo)
