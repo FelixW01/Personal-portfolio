@@ -22,7 +22,7 @@ function ProjectsCard( props ) {
             <p className="projects-summary">
               {props.description}
             </p>
-            <div className="d-grid gap-2 d-md-block">
+            <div>
             <a href={props.live} target="_blank">
               <button
                 className="btn btn-outline-primary live-btn"
