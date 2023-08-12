@@ -20,7 +20,7 @@
   width: 55ch;
 }
 .about-img {
-  max-width: 40%;
+  max-width: 100%;
   margin-bottom: 10rem;
 }
 .profile-pic {
@@ -42,11 +42,65 @@
     width: 45ch;
   }
   .about-img {
-    margin-top: 2rem;
-    margin-bottom: 0;
+    margin: 2rem 0 0 0;
   }
   .profile-pic {
-    margin-bottom: 0;
+    margin: 0;
+  }
+  .about-container {
+    min-height: 80%;
+  }
+}
+@media (max-width: 912px) and (min-height: 1368px) {
+  .about-img {
+    text-align: center;
+    max-width: 45%;
+  }
+  .about-div {
+    margin-top: 3.5rem;
+  }
+  .profile-pic {
+    max-width: 95%;
+  }
+  .about-content h2 {
+    font-size: 1rem;
+  }
+  .about-container {
+    min-height: 66%;
+  }
+}
+@media (max-width: 904px) and (min-height: 844px) {
+  .profile-pic {
+    max-width: 60%;
+  }
+  .about-content {
+    margin-top: 3rem;
+  }
+  .about-img {
+    margin-top: 2rem;
+  }
+  .about-content h2 {
+    font-size: 0.9rem;
+    width: 42ch;
+    text-align: center;
+  }
+}
+@media (max-width: 820px) and (min-height: 1180px) {
+  .about-img {
+    text-align: center;
+    max-width: 45%;
+  }
+  .about-div {
+    margin-top: 3.5rem;
+  }
+  .profile-pic {
+    max-width: 95%;
+  }
+  .about-content h2 {
+    font-size: 1rem;
+  }
+  .about-container {
+    min-height: 66%;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -57,9 +111,6 @@
     font-size: 0.9rem;
     width: 45ch;
   }
-  .profile-pic {
-    margin-top: 1rem;
-  }
   .about-container h1 {
     margin-top: 2rem;
   }
@@ -68,11 +119,128 @@
   }
 }
 @media (max-width: 768px) and (min-height: 1024px) {
+  .about-div {
+    margin-top: 3rem;
+  }
+  .about-img {
+    text-align: center;
+    max-width: 45%;
+  }
+  .profile-pic {
+    max-width: 85%;
+  }
   .about-container {
-    min-height: 50%;
+    min-height: 60%;
   }
   .about-container h1 {
     margin-top: 2rem;
+  }
+  .about-content h2 {
+    max-width: 42ch;
+    margin-top: 1.5rem;
+  }
+  .about-content {
+    margin-top: 2.25rem;
+  }
+}
+@media (max-width: 640px) {
+  .profile-pic {
+    max-width: 65%;
+    margin: 0;
+  }
+  .about-img {
+    max-width: 100%;
+    margin: 0;
+  }
+  .about-container {
+    min-height: 100%;
+  }
+  .about-div {
+    display: block;
+    text-align: center;
+  }
+  .about-content h2 {
+    font-size: 1rem;
+    width: 50ch;
+  }
+  .about-content {
+    margin-top: 4rem;
+    text-align: start;
+  }
+}
+@media (max-width: 540px) and (min-height: 720px) {
+  .profile-pic {
+    max-width: 55%;
+  }
+  .about-content h2 {
+    font-size: 0.9rem;
+    max-width: 45ch;
+  }
+  .about-content {
+    margin-top: 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-container {
+    min-height: 105%;
+  }
+}
+@media (max-width: 476px) {
+  .profile-pic {
+    max-width: 55%;
+  }
+  .about-content h2 {
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+    max-width: 45ch;
+    text-align: start;
+  }
+  .about-content {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 414px) and (min-height: 896px) {
+  .about-content {
+    margin-top: 3rem;
+  }
+  .about-img {
+    margin-top: 3rem;
+  }
+}
+@media (max-width: 380px) {
+  .about-content h2 {
+    font-size: 0.8rem;
+    max-width: 42ch;
+    text-align: center;
+  }
+  .about-content {
+    margin-top: 3.5rem;
+  }
+  .about-img {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 375px) and (min-height: 667px) {
+  .about-content h2 {
+    margin-top: 1rem;
+  }
+  .about-content {
+    margin-top: 1.25rem;
+  }
+  .about-img {
+    margin-top: 0;
+  }
+}
+@media (max-width: 360px) and (min-height: 740px) {
+  .about-content {
+    margin-top: 3rem;
+  }
+  .about-img {
+    margin-top: 3rem;
   }
 }
 /* about page */
