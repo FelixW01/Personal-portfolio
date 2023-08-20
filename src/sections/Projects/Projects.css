@@ -151,6 +151,9 @@
   }
 }
 @media only screen and (max-width: 620px) {
+  .projects-title {
+    margin-top: 2rem;
+  }
   .projects-desc h2 {
     font-size: 1.25rem;
   }

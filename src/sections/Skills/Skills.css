@@ -76,9 +76,11 @@
   margin-top: 6.5rem;
 }
 .skills-icons div {
-  display: inline;
-  text-align: center;
-  padding-right: 3rem;
+  padding: 0;
+  margin: 1rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .skills-title-div {
   text-align: center;
@@ -109,12 +111,13 @@
   margin: auto;
 }
 .initial-icons div {
-  display: inline;
-  text-align: center;
-  padding-right: 3rem;
+  margin: 1rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .icon-title {
-  display: inline;
+  margin: 0;
   font-size: 1.25rem;
 }
 /* skills initial icons */
@@ -211,4 +214,52 @@
 }
 .icons-reveal {
   display: flex;
+}
+@media only screen and (max-width: 620px) {
+  .skills-header {
+    margin-top: 2rem;
+  }
+  .skills-div {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .art-container {
+    padding: 0;
+    margin: 0;
+  }
+  .art {
+    margin-top: 1.5rem;
+    height: 16.75rem;
+    width: 12.3rem;
+  }
+  .yolk {
+    height: 7.5rem;
+    width: 7.2rem;
+    right: 40px;
+    top: 116px;
+  }
+  .skills-display {
+    padding: 0;
+  }
+  .initial-icons {
+    margin-top: 1rem;
+  }
+  .initial-icons img {
+    margin: 0;
+  }
+  .skills-icons img {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 390px) and (min-height: 844px) {
+  .initial-icons div {
+    margin: 0.75rem 0.5rem;
+  }
+  .skills-icons div {
+    margin: 0.75rem 0.5rem;
+  }
+  .icon-title {
+    font-size: 1rem;
+  }
 }
