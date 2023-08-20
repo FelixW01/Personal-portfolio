@@ -10,7 +10,7 @@ function Contact() {
       >
         GET IN TOUCH
       </h2>
-      <p className="text-end w-responsive mx-auto contact-p">
+      <p className="text-end w-responsive mx-auto contact-p contact-p">
         Interested in working together? Let's connect via email or linkedIn
       </p>
 

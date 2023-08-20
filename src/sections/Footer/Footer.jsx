@@ -14,7 +14,6 @@ function Footer() {
           <a
             href="https://www.linkedin.com/in/felix-willem01/"
             target="_blank"
-            className="icons"
             ><i className="fa-brands fa-linkedin-in"></i>
           </a>
         </li>
@@ -24,7 +23,7 @@ function Footer() {
           </a>
         </li>
         <li>
-          <a href="https://github.com/FelixW01" target="_blank" className="icons"
+          <a href="https://github.com/FelixW01" target="_blank"
             ><i className="fa-brands fa-github"></i>
           </a>
         </li>

@@ -71,4 +71,12 @@
     min-height: 50%;
   }
 }
+@media (max-width: 520px) {
+  .contact-p {
+    font-size: 1rem;
+  }
+  .text-end {
+    text-align: center !important;
+  }
+}
 /* contact */

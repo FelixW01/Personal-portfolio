@@ -5,7 +5,7 @@
   align-items: center;
   min-height: 165svh;
 }
-.projects-title {
+.projects-header {
   font-weight: 400;
   display: inline;
   margin: 4rem 0;
@@ -57,7 +57,7 @@
   text-decoration: none;
 }
 @media only screen and (max-width: 1275px) {
-  .projects-title {
+  .projects-header {
     font-size: 2.5rem;
   }
 }
@@ -65,7 +65,7 @@
   .projects-desc h2 {
     font-size: 1.5rem;
   }
-  .projects-title {
+  .projects-header {
     font-size: 2.5rem;
   }
   .projects-container {
@@ -151,7 +151,7 @@
   }
 }
 @media only screen and (max-width: 620px) {
-  .projects-title {
+  .projects-header {
     margin-top: 2rem;
   }
   .projects-desc h2 {

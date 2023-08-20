@@ -11,9 +11,10 @@
   flex-direction: row;
   align-items: center;
   margin-top: 4.5rem;
+  padding-left: 0;
 }
 .footer-ul li {
-  margin-right: 1.75rem;
+  margin: 0 1.5rem;
 }
 .footer-ul i {
   font-size: 4rem;
@@ -43,5 +44,12 @@ ul {
   .footer-ul i {
     font-size: 2rem;
   }
+  .footer-ul {
+    margin-top: 3rem;
+  }
+  .footer-ul li {
+    margin: 0 1rem;
+  }
 }
+
 /* footer */
