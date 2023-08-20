@@ -5,7 +5,7 @@ function About( { addToRefs } ) {
         <>
     <div className="top-separator"></div>
     <section className="about-container" id="aboutpage">
-      <h1 className="about-h1">About</h1>
+      <h1 className="about-header">About</h1>
       <div className="about-div">
         <div className="about-img">
           <img

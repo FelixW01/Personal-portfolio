@@ -115,7 +115,7 @@ function Projects( props ) {
     return (
 <>
   <section className="projects-container" id="projectspage">
-    <h1 className="projects-title">Projects</h1>     
+    <h1 className="projects-header">Projects</h1>     
       {cards}
   </section>
 </>
