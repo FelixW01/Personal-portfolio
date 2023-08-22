@@ -33,6 +33,7 @@
   }
   .navbar-collapse {
     display: inline-flex;
+    align-items: flex-start;
   }
 }
 @media only screen and (max-width: 933px) {
