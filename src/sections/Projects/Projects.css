@@ -56,6 +56,21 @@
   display: inline;
   text-decoration: none;
 }
+@media only screen and (max-height: 900px) {
+  .projects-container {
+    min-height: 185vh;
+  }
+}
+@media only screen and (max-height: 800px) {
+  .projects-container {
+    min-height: 205vh;
+  }
+}
+@media only screen and (max-height: 600px) {
+  .projects-container {
+    min-height: 270vh;
+  }
+}
 @media only screen and (max-width: 1275px) {
   .projects-header {
     font-size: 2.5rem;
@@ -84,7 +99,7 @@
     font-size: 1rem;
   }
   .projects-container {
-    min-height: 170vh;
+    min-height: 150vh;
   }
 }
 @media only screen and (max-width: 933px) {

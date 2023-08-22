@@ -52,7 +52,6 @@ function Navbar( { target } ) {
             <li className="nav-item">
               <a className={navbar ? "nav-link nav-link--scrolled" : "nav-link"} id="contact" href="#contactpage">Contact</a>
             </li>
-
           </ul>
         </div>
       </div>

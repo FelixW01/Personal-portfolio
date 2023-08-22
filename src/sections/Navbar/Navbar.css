@@ -31,6 +31,9 @@
   .nav-link {
     padding: 0.3rem;
   }
+  .navbar-collapse {
+    display: inline-flex;
+  }
 }
 @media only screen and (max-width: 933px) {
   .nav-home {
