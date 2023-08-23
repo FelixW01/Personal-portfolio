@@ -26,15 +26,15 @@
 }
 #message-input {
   min-width: 100%;
+  min-height: 5rem;
   padding: 0.25rem 0.3rem;
   font-size: 1rem;
-  margin: 0.63rem 0;
   border: 2px solid var(--dark);
   background: var(--light);
   border-radius: 0.5rem;
 }
 .send-btn {
-  margin-top: 1.5rem;
+  margin-top: 0.75rem;
   background-color: var(--blue);
 }
 .send-btn:hover {
