@@ -16,44 +16,48 @@ function Contact() {
 
       <div className="row">
         <div className="col-md-9 mb-md-0 mb-5 form-content">
+
           <form
             id="contact-form"
-            name="contact-form"
+            name="contact"
             className="main-form"
-            data-netlify="true"
             method="POST"
-            data-netlify-honeypot="bot-field"
-            action="/success/"
+            action="/success"
           >
-          <input type="hidden" name="contact-form" value="contact-form" />
+          
+          <input type="hidden" name="form-name" value="contact" />
           
             {/* <!-- Name --> */}
             <input className="d-none" name="bot-field" />
             <div className="row">
+            
               <div className="col-md-6">
                 <div className="md-form mb-0">
-                  <input
-                    type="text"
+                  <input type="text"
                     id="name-input"
                     name="name"
                     className="form-input"
+                    placeholder="Your name"
+                    required
                   />
-                  <label htmlFor="name">Your name</label>
                 </div>
               </div>
+
               {/* <!-- Email --> */}
               <div className="col-md-6">
                 <div className="md-form mb-0">
                   <input
-                    type="text"
+                    type="email"
                     id="email-input"
                     name="email"
                     className="form-input"
+                    placeholder="Your email"
+                    required
                   />
-                  <label htmlFor="email">Your email</label>
                 </div>
               </div>
             </div>
+
             {/* <!-- Subject --> */}
             <div className="row">
               <div className="col-md-12">
@@ -63,11 +67,12 @@ function Contact() {
                     id="subject-input"
                     name="subject"
                     className="form-input"
+                    placeholder="Subject"
                   />
-                  <label htmlFor="subject">Subject</label>
                 </div>
               </div>
             </div>
+
             {/* <!-- Content --> */}
             <div className="row message-div">
               <div className="col-md-12">
@@ -78,11 +83,13 @@ function Contact() {
                     name="message"
                     rows="2"
                     className="md-textarea form-input"
+                    placeholder="Your message"
+                    required
                   ></textarea>
-                  <label htmlFor="message">Your message</label>
                 </div>
               </div>
             </div>
+
             <button type="submit" className="btn btn-primary send-btn">
               Send Message
             </button>
