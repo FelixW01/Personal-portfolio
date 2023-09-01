@@ -50,7 +50,7 @@ const addToTargetRef = (ref) => {
             </a>
 
             <a 
-              href="https://drive.google.com/file/d/1dbBZ-7sadI9HNHL0Ya_Q6Ck56RIad8sJ/view?usp=sharing" 
+              href="https://drive.google.com/file/d/1mf62RK4syonF-jkDASJizA-nOUfB57OX/view?usp=sharing" 
               rel="noopener noreferrer"
               target="_blank" 
               className="icons">
