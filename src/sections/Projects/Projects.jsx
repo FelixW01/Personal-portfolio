@@ -2,6 +2,40 @@ import './Projects.css'
 import ProjectsCard from './ProjectsCard.jsx'
 const projectsArray = [
   {
+  icons: [
+        {
+          src: "/images/react.png",
+          title: "React",
+          alt: "React"
+        },
+        {
+          src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+          title: "CSS",
+          alt: "CSS"
+        },
+        {
+          src: "/images/js.png",
+          title: "JavaScript",
+          alt: "JS"
+        },
+        {
+          src: "/images/nodejs.png",
+          title: "NodeJS",
+          alt: "NodeJS"
+        },
+        {
+          src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+          title: "mongodb",
+          alt: "mongodb",
+        }
+    ],
+    title: "ChoreBuddy",
+    description: "A chore application designed to effortlessly bring harmony to your household responsibilities. With ChoreBuddy, coordinating chores becomes a breeze. Our app simplifies task allocation and tracking, ensuring that everyone in the household is on the same page.",
+    live: "https://chore-buddy-6e6d2559dc60.herokuapp.com/",
+    github: "https://github.com/Dinh282/chore-buddy",
+    video: "https://www.youtube.com/embed/0uwXTIX8SYI?si=yx_so5qH0MLd9V9x"
+  },
+    {
     icons: [
         {
           src: "/images/nodejs.png",
@@ -43,40 +77,6 @@ const projectsArray = [
   {
   icons: [
         {
-          src: "/images/html.png",
-          title: "Html",
-          alt: "Html"
-        },
-        {
-          src: "/images/css.png",
-          title: "CSS",
-          alt: "CSS"
-        },
-        {
-          src: "/images/js.png",
-          title: "JavaScript",
-          alt: "JS"
-        },
-        {
-          src: "/images/mapbox.png",
-          title: "Mapbox API",
-          alt: "mapbox"
-        },
-        {
-          src: "/images/google-maps.png",
-          title: "Google Maps API",
-          alt: "google-map",
-        }
-    ],
-    title: "City Snap",
-    description: " Exploration at your fingertips. An interactive App that spins the globe onto the specific geolocation of a city that the user has specified. In addition, the user will be able to view a well-known image from the locale.",
-    live: "https://ilirhajdari.github.io/city-snap/",
-    github: "https://github.com/IlirHajdari/city-snap",
-    video: "https://www.youtube-nocookie.com/embed/a_W2GmhaA_k"
-  },
-  {
-  icons: [
-        {
           src: "/images/react.png",
           title: "NodeJS",
           alt: "NodeJS"
@@ -102,7 +102,7 @@ const projectsArray = [
     live: "#homepage",
     github: "https://github.com/FelixW01/Personal-portfolio",
     video: "https://www.youtube-nocookie.com/embed/AMk6QMj5zTw"
-  }
+  },
 ]
 
 
