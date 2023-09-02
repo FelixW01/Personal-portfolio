@@ -28,6 +28,9 @@
   margin-right: 0.3rem;
   max-width: 3vh;
 }
+.projects-icons-div {
+  margin-bottom: 0.5rem;
+}
 .projects-vid iframe {
   border-radius: 0.5rem;
 }

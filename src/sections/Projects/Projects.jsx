@@ -19,18 +19,33 @@ const projectsArray = [
           alt: "JS"
         },
         {
+          src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
+          title: "GraphQL",
+          alt: "GraphQL"
+        },
+        {
           src: "/images/nodejs.png",
           title: "NodeJS",
           alt: "NodeJS"
         },
         {
           src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-          title: "mongodb",
-          alt: "mongodb",
+          title: "Mongodb",
+          alt: "Mongodb",
+        },
+        {
+          src: "/images/framer-motion.png",
+          title: "FramerMotion",
+          alt: "FramerMotion"
+        },
+        {
+          src: "/images/ant-design.png",
+          title: "AntDesign",
+          alt: "AntDesign"
         }
     ],
     title: "ChoreBuddy",
-    description: "A chore application designed to effortlessly bring harmony to your household responsibilities. With ChoreBuddy, coordinating chores becomes a breeze. Our app simplifies task allocation and tracking, ensuring that everyone in the household is on the same page.",
+    description: "ChoreBuddy is your family's chore management companion, streamlining task allocation and tracking with ease. With modern technology at its core, ChoreBuddy ensures a secure and user-friendly experience for efficient household chore management.",
     live: "https://chore-buddy-6e6d2559dc60.herokuapp.com/",
     github: "https://github.com/Dinh282/chore-buddy",
     video: "https://www.youtube.com/embed/0uwXTIX8SYI?si=yx_so5qH0MLd9V9x"
