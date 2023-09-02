@@ -96,6 +96,12 @@ function Skills() {
             <img src="/images/bootstrap.png" alt="bootstrap_icon" />
             <p className="icon-title">Bootstrap</p>
             </div>
+
+            <div>
+            <img src="/images/redux.png" alt="Redux_icon" />
+            <p className="icon-title">Redux</p>
+            </div>
+
           </div>
 
           {/* <!-- tools icons --> */}
@@ -123,6 +129,11 @@ function Skills() {
             <div>
             <img src="/images/insomnia.png" alt="insomnia_icon" />
             <p className="icon-title">Insomnia</p>
+            </div>
+
+            <div>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" alt="graphQL_icon" />
+            <p className="icon-title">GraphQL</p>
             </div>
 
           </div>
@@ -153,6 +164,12 @@ function Skills() {
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" alt="express_icon"/>
             <p className="icon-title">Express</p>
             </div>
+
+            <div>
+            <img src="/images/api.png" alt="restApi_icon"/>
+            <p className="icon-title">Rest Api</p>
+            </div>
+
           </div>  
         </div>
       </div>
