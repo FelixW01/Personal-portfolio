@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 165svh;
+  min-height: 180svh;
 }
 .projects-header {
   font-weight: 400;
