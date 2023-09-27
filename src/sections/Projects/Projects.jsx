@@ -47,7 +47,7 @@ const projectsArray = [
     title: "ChoreBuddy",
     description: "ChoreBuddy is your family's chore management companion, streamlining task allocation and tracking with ease. With modern technology at its core, ChoreBuddy ensures a secure and user-friendly experience for efficient household chore management.",
     live: "https://chore-buddy-6e6d2559dc60.herokuapp.com/",
-    github: "https://github.com/Dinh282/chore-buddy",
+    github: "https://github.com/FelixW01/ChoreBuddy",
     video: "https://www.youtube.com/embed/0uwXTIX8SYI?si=yx_so5qH0MLd9V9x"
   },
     {
@@ -86,7 +86,7 @@ const projectsArray = [
     title: "The Movie Forum",
     description: "An interactive, real-time forum app where users can congregate, interact and coverse about upcoming movies provided by the TMDB api.",
     live: "https://dry-cove-24471-f11ca301104d.herokuapp.com/",
-    github: "movie-forum-app",
+    github: "https://github.com/FelixW01/The-Movie-Forum",
     video: "https://www.youtube-nocookie.com/embed/1zzl37IlHMU"
   },
   {
