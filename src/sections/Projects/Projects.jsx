@@ -10,8 +10,8 @@ const projectsArray = [
         },
         {
           src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-          title: "CSS",
-          alt: "CSS"
+          title: "Express",
+          alt: "Express"
         },
         {
           src: "/images/js.png",
