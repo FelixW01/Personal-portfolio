@@ -5,6 +5,65 @@ const projectsArray = [
   icons: [
         {
           src: "/images/react.png",
+          title: "NodeJS",
+          alt: "NodeJS"
+        },
+        {
+          src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+          title: "Express",
+          alt: "Express"
+        },
+        {
+          src: "/images/js.png",
+          title: "JavaScript",
+          alt: "JS"
+        },
+        {
+          src: "/images/nodejs.png",
+          title: "NodeJS",
+          alt: "NodeJS"
+        },
+        {
+          src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+          title: "Mongodb",
+          alt: "Mongodb",
+        },
+        {
+          src: "/images/framer-motion.png",
+          title: "FramerMotion",
+          alt: "FramerMotion"
+        },
+        {
+          src: "/images/ant-design.png",
+          title: "AntDesign",
+          alt: "AntDesign"
+        },
+        {
+          src: "/images/stripe.png",
+          title: "Stripe",
+          alt: "Stripe"
+        },
+        {
+          src: "/images/jwt.png",
+          title: "JWT",
+          alt: "JWT"
+        },
+        {
+          src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/axios/axios-plain.svg",
+          title: "Axios",
+          alt: "Axios",
+        },
+    ],
+    title: "Lili's Bakery",
+    description: "Lili's Bakery is an e-commerce platform designed to provide a delightful online shopping experience for food enthusiasts, allowing you to explore, discover, and purchase Indonesian baked goods products from Lili's Bakery.",
+    live: "https://lilisbakery-81b213953aed.herokuapp.com/",
+    github: "https://github.com/FelixW01/lilis-bakery",
+    video: "https://www.youtube.com/embed/PlWWhpj49pc?si=BshlJB_NUkFNT9N7"
+  },
+  {
+  icons: [
+        {
+          src: "/images/react.png",
           title: "React",
           alt: "React"
         },
@@ -88,35 +147,6 @@ const projectsArray = [
     live: "https://dry-cove-24471-f11ca301104d.herokuapp.com/",
     github: "https://github.com/FelixW01/The-Movie-Forum",
     video: "https://www.youtube-nocookie.com/embed/1zzl37IlHMU"
-  },
-  {
-  icons: [
-        {
-          src: "/images/react.png",
-          title: "NodeJS",
-          alt: "NodeJS"
-        },
-        {
-          src: "/images/js.png",
-          title: "JavaScript",
-          alt: "JS"
-        },
-        {
-          src: "/images/html.png",
-          title: "Html",
-          alt: "Html"
-        },
-        {
-          src: "/images/css.png",
-          title: "CSS",
-          alt: "CSS"
-        },
-    ],
-    title: "Personal Portfolio",
-    description: " A personal portfolio website with an elegant and minimalistic design to showcase personal projects and content.",
-    live: "#homepage",
-    github: "https://github.com/FelixW01/Personal-portfolio",
-    video: "https://www.youtube-nocookie.com/embed/AMk6QMj5zTw"
   },
 ]
 

@@ -1,3 +1,7 @@
+.navbar {
+  background-color: var(--light);
+}
+
 .nav-link {
   color: var(--blue);
   font-size: 1.75rem;
