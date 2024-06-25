@@ -58,7 +58,7 @@ const projectsArray = [
     description: "Lili's Bakery is an e-commerce platform designed to provide a delightful online shopping experience for food enthusiasts, allowing you to explore, discover, and purchase Indonesian baked goods products from Lili's Bakery.",
     live: "https://lilisbakery-81b213953aed.herokuapp.com/",
     github: "https://github.com/FelixW01/lilis-bakery",
-    video: "https://www.youtube.com/embed/PlWWhpj49pc?si=BshlJB_NUkFNT9N7"
+    video: "https://www.youtube.com/embed/p-y_5Eeo2Ts?si=Bu9VVs1e5JnpeOia"
   },
   {
   icons: [
