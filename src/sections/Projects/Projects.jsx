@@ -2,11 +2,11 @@ import './Projects.css'
 import ProjectsCard from './ProjectsCard.jsx'
 const projectsArray = [
   {
-  icons: [
+    icons: [
         {
           src: "/images/react.png",
-          title: "NodeJS",
-          alt: "NodeJS"
+          title: "ReactJS",
+          alt: "ReactJS"
         },
         {
           src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
@@ -14,9 +14,48 @@ const projectsArray = [
           alt: "Express"
         },
         {
+          src: "/images/nodejs.png",
+          title: "NodeJS",
+          alt: "NodeJS"
+        },
+        {
+          src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
+          title: "MySQL",
+          alt: "MySQL.icon",
+        },
+        {
           src: "/images/js.png",
           title: "JavaScript",
           alt: "JS"
+        },
+        {
+          src: "/images/ant-design.png",
+          title: "AntDesign",
+          alt: "AntDesign"
+        },
+        {
+          src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/axios/axios-plain.svg",
+          title: "Axios",
+          alt: "Axios",
+        },
+    ],
+    title: "Overcast",
+    description: "Welcome to Overcast, your one-stop shop for stylish seasonal clothing. Overcast is designed for those who appreciate the cozy things in life, offering a seamless shopping experience with fashion solutions tailored to every season.",
+    live: "https://overcast-98c306aa4a6c.herokuapp.com/",
+    github: "https://github.com/FelixW01/overcast-2",
+    video: "https://www.youtube.com/embed/kMV4FxscnB4?si=wZy29UBhMCVLGrBU"
+  },
+  {
+  icons: [
+        {
+          src: "/images/react.png",
+          title: "ReactJS",
+          alt: "ReactJS"
+        },
+        {
+          src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+          title: "Express",
+          alt: "Express"
         },
         {
           src: "/images/nodejs.png",
@@ -27,6 +66,11 @@ const projectsArray = [
           src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
           title: "Mongodb",
           alt: "Mongodb",
+        },
+                {
+          src: "/images/js.png",
+          title: "JavaScript",
+          alt: "JS"
         },
         {
           src: "/images/framer-motion.png",
@@ -105,48 +149,8 @@ const projectsArray = [
     ],
     title: "ChoreBuddy",
     description: "ChoreBuddy is your family's chore management companion, streamlining task allocation and tracking with ease. With modern technology at its core, ChoreBuddy ensures a secure and user-friendly experience for efficient household chore management.",
-    live: "https://chore-buddy-6e6d2559dc60.herokuapp.com/",
     github: "https://github.com/FelixW01/ChoreBuddy",
     video: "https://www.youtube.com/embed/0uwXTIX8SYI?si=yx_so5qH0MLd9V9x"
-  },
-    {
-    icons: [
-        {
-          src: "/images/nodejs.png",
-          title: "NodeJS",
-          alt: "NodeJS"
-        },
-        {
-          src: "/images/js.png",
-          title: "JavaScript",
-          alt: "JS"
-        },
-        {
-          src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-          title: "Express",
-          alt: "Express"
-        },
-        {
-          src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-plain.svg",
-          title: "Sequelize",
-          alt: "sequelize.icon",
-        },
-        {
-          src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/handlebars/handlebars-original.svg",
-          title: "HandlebarsJS",
-          alt: "handlebars"
-        },
-        {
-          src: "/images/tmdb.png",
-          title: "TMDB API",
-          alt: "TMDB"
-        },
-    ],
-    title: "The Movie Forum",
-    description: "An interactive, real-time forum app where users can congregate, interact and coverse about upcoming movies provided by the TMDB api.",
-    live: "https://dry-cove-24471-f11ca301104d.herokuapp.com/",
-    github: "https://github.com/FelixW01/The-Movie-Forum",
-    video: "https://www.youtube-nocookie.com/embed/1zzl37IlHMU"
   },
 ]
 

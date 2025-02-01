@@ -42,19 +42,47 @@
   max-width: 40ch;
 }
 .live-btn {
+  background-color: var(--light);
   color: var(--blue);
-}
-.live-btn:hover {
-  background-color: var(--blue);
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  transition: background-color 0.3s ease;
+  border-right: none;
 }
 .source-btn {
   background-color: var(--blue);
   color: var(--light);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  transition: background-color 0.3s ease;
+  border-left: 1px solid #ffffff;
 }
+
+.live-btn:hover {
+  background-color: var(--blue);
+  color: var(--light);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .source-btn:hover {
   background-color: var(--light);
   color: var(--blue);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-left: 1px solid var(--blue);
 }
+
+.source-btn-2 {
+  background-color: var(--blue);
+  color: var(--light);
+  transition: background-color 0.3s ease;
+}
+
+.source-btn-2:hover {
+  background-color: var(--light);
+  color: var(--blue);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .btn-link {
   display: inline;
   text-decoration: none;

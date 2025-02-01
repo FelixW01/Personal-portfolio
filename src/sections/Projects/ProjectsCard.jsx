@@ -23,20 +23,24 @@ function ProjectsCard( props ) {
               {props.description}
             </p>
             <div>
-            <a href={props.live} target="_blank">
+            {props.live ? <a href={props.live} target="_blank">
               <button
                 className="btn btn-outline-primary live-btn"
                 type="button">
                 See Live
               </button>
-            </a>
-
               <a href={props.github}
                 target="_blank"><button
                 className="btn btn-outline-primary source-btn"
                 type="button">
                 Source Code
               </button></a>
+            </a> : <a href={props.github}
+                target="_blank"><button
+                className="btn btn-outline-primary source-btn-2"
+                type="button">
+                Source Code
+              </button></a>}
             </div>
           </div>
           <div className="projects-vid">
