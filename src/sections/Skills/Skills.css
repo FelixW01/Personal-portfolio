@@ -13,12 +13,20 @@
   margin-top: 4rem;
   font-size: 3rem;
 }
+.skills-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 .skills-div {
-  max-width: 80%;
-  max-height: 80%;
+  width: 80%;
+  height: 80%;
   display: flex;
   flex-direction: row;
   margin-top: 5rem;
+  justify-content: center;
 }
 .art-container {
   margin-top: 3rem;
@@ -58,8 +66,10 @@
 }
 .skills-display {
   margin-top: 3rem;
-  padding-left: 5rem;
-  min-width: 42vw;
+  /* padding-left: 5rem; */
+  min-width: 60%;
+  display: flex;
+  flex-direction: column;
 }
 .skills-icons img {
   max-width: 5rem;
@@ -119,6 +129,10 @@
 .icon-title {
   margin: 0;
   font-size: 1.25rem;
+}
+
+.icon-div {
+  min-width: 80px;
 }
 /* skills initial icons */
 @media only screen and (max-width: 1275px) {
@@ -216,6 +230,9 @@
   display: flex;
 }
 @media only screen and (max-width: 620px) {
+  .icon-div {
+    min-width: 60px;
+  }
   .skills-header {
     margin-top: 2rem;
   }
